@@ -1,6 +1,6 @@
 # Личный проект «Глейси»
 
-* Студент: [Юрий Гапончук](https://up.htmlacademy.ru/htmlcss/13/user/63400).
+* Студент: [Юрий Гапончу](https://up.htmlacademy.ru/htmlcss/13/user/63400).
 * Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
