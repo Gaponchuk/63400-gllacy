@@ -18,6 +18,7 @@
     <div class="central-container">
   <!--Начало шапки сайта-->
       <header>
+  <!--Начало навигации-->
         <nav class="gs-nav">
           <img title="Gllasy Shop" alt="Логотип Gllacy Shop" src="http://placehold.it/160x70">
           <ul>
@@ -34,25 +35,49 @@
             <li><a href="#">О Компании</a></li>
           </ul>
         </nav>
-        <form action="" method="">
+  <!--Конец навигации-->
+        <form action="" name="" method="">
           <input type="search" placeholder="Что ищем?">
         </form>
-        <a class="login">
-          <form action="" name="">
-            <input type="email" name="email" placeholder="Электронная почта">
-            <input type="password" name="password" placeholder="Пароль">
-            <input type="submit" value="Войти">
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
+        <div class="login">
+          <a href="" class="log">Вход
+            <form action="" name="" method="get">
+              <input type="email" name="email" placeholder="Электронная почта">
+              <input type="password" name="password" placeholder="Пароль">
+              <input type="submit" value="Войти">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
+          </a>
+        </div>
+        <a href="#">Пусто
+           <form action="" name="" method="get">
+            <table>
+              <caption>Итого: 750 руб.</caption>
+              <tr>
+                <td>X</td>
+                <td><img src=""></td>
+                <td>Пломбир с апельсиновам джемом</td>
+                <td>1,5 кг х <span>200 руб.</span></td>
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+                <td>X</td>
+                <td><img src=""></td>
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td>1,5 кг <span>300 руб.</span></td>
+                <td>450 руб.</td>
+              </tr>
+            </table>
+            <input type="submit" value="Оформить заказ">
           </form>
         </a>
-        <a href="#">Пусто</a>
         <section class="info">
           <p>С 10 до 20, ежедневно</p>
           <a href="tel:88124502525">8 812 450-25-25</a>
         </section>
       </header>
-  <!--Конец шапки слайдера-->
+  <!--Конец шапки-->
   <!--Начало основного содержания-->
       <main class="content">
         <div class="action razz-left">
@@ -65,6 +90,7 @@
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="want" href="#">Хочу шоколадки!</a>
         </div>
+  <!--Начало блока с мороженым-->
         <div class="ice-cream-gal">
           <article class="ice-cream">
             <img src="#" alt="Сливочно-цитрусовое">
@@ -87,6 +113,7 @@
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </article>
         </div>
+  <!--Конец блока с мороженым-->
         <div class="better">
           <h1>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
           <div class="left">
@@ -104,13 +131,52 @@
         </section>
         <section class="subscribe">
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-          <form action="" name="">
+          <form action="" name="" method="get">
             <input type="email" name="email" placeholder="Электронная почта">
             <input type="submit" value="Отправить">
           </form>
         </section>
       </main>
   <!--Конец основного блока-->
+    </div>
+  <!--Начало области с картой-->
+    <div class="map"> <!--Картинку карты вставить через background-->
+      <div class="central-container">
+        <article class="map-info">
+        <span>Адрес главного офиса и офлайн магазина:</span>
+        <address>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</address>
+        </span>Для заказов по телефону:</span>
+        <a href="tel:88124502525">8 812 450-25-25</a>
+        <span>(c 10 до 20 ежедневно)</span>
+        <a href="#">Форма обратной связи</a>
+        </article>
+      </div>
+    </div>
+  <!--Начало футера-->
+    <div class="central-container">
+      <footer class="gl-footer">
+        <section class="social-icon">
+          <a href="#" class="icon tw">Twitter</a>
+          <a href="#" class="icon inst">Instagram</a>
+          <a href="#" class="icon fb">Facebook</a>
+          <a href="#" class="icon vk">VKontakte</a>
+        </section>
+        <section class="materials">
+          <div class="mat-left">
+            <a href="#">Для поставщиков</a>
+            <a href="#">О производстве</a>
+          </div>
+          <div class="mat-left">
+            <a href="#">Наши документы</a>
+            <a href="#">Экологические стандарты</a>
+          </div>
+        </section>
+        <section class="author">
+          <div class="logo-academy">
+          <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>&copy; 2016</p>
+          </div>
+        </section>
+      </footer>
     </div>
   </body>
 </html>
