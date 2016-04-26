@@ -1,0 +1,9 @@
+body{
+  font-family: sans-serif;/*семейство шрифтов*/
+  font-size: 16px;/*размер шрифта*/
+  line-height: 1.5; /*высота строки*/
+  color:#652614; /*цвет текста*/
+  font-weight: normal;/*жирность шрифта*/
+  padding: 0;
+  background-color: rgba(224, 182, 146, 0.81);
+}
