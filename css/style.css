@@ -5,5 +5,9 @@ body{
   color:#652614; /*цвет текста*/
   font-weight: normal;/*жирность шрифта*/
   padding: 0;
-  background-color: rgba(224, 182, 146, 0.81);
+  background-color: rgba(144, 166, 154, 0.8);
+}
+.central-container{
+  width: 1200px;
+  margin: 0 auto;
 }

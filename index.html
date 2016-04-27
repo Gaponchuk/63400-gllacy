@@ -5,23 +5,24 @@
     <title>Gllacy Shop</title>
     <meta name="description" content="Магазин Gllacy Shop - место, где делают лучшее мороженное, используя настоящие сливки и молоко высочайшего качества">
     <meta name="keywords" content="мороженое собственного производства, настоящее мороженое, настоящее мороженое на развес">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <!--Начало слайдера-->
     <label for="img-1"></label>
-    <input id="img-1" type="radio" name="sliders">
     <label for="img-2"></label>
-    <input id="img-2" type="radio" name="sliders">
     <label for="img-3"></label>
-    <input id="img-3" type="radio" name="sliders">
   <!--Конец слайдера-->
     <div class="central-container">
+    <input id="img-1" type="radio" name="sliders">
+    <input id="img-2" type="radio" name="sliders">
+    <input id="img-3" type="radio" name="sliders">
   <!--Начало шапки сайта-->
       <header>
   <!--Начало навигации-->
         <nav class="gs-nav">
-          <img title="Gllasy Shop" alt="Логотип Gllacy Shop" src="img/Logo.png">
+          <img title="Gllasy Shop" alt="Логотип Gllacy Shop" src="img/logo.svg" width="154" height="64">
           <ul>
             <li><a href="#">Каталог</a>
               <ul class="katalog-hover">
@@ -37,12 +38,12 @@
           </ul>
         </nav>
   <!--Конец навигации-->
-        <form action="" name="" method="">
+        <form action="" method="get">
           <input type="search" placeholder="Что ищем?">
         </form>
         <div class="login">
-          <a href="" class="log">Вход
-            <form action="" name="" method="get">
+          <a href="#" class="log">Вход
+            <form action="" method="get">
               <input type="email" name="email" placeholder="Электронная почта">
               <input type="password" name="password" placeholder="Пароль">
               <input type="submit" value="Войти">
@@ -52,7 +53,7 @@
           </a>
         </div>
         <a href="#">Пусто
-           <form action="" name="" method="get">
+           <form action="" method="get">
             <table>
               <caption>Итого: 750 руб.</caption>
               <tr>
@@ -84,7 +85,7 @@
         <div class="action razz-left">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="want" href="#">Хочу варелье!</a>
+          <a class="want" href="#">Хочу варенье!</a>
         </div>
         <div class="action chocolate">
           <h2>Шоколадки даром!</h2>
@@ -94,22 +95,22 @@
   <!--Начало блока с мороженым-->
         <div class="ice-cream-gal">
           <article class="ice-cream">
-            <img src="img/ice-cream-310.gif" alt="Сливочно-цитрусовое">
+            <img src="img/ice-cream-310.jpg" alt="Сливочно-цитрусовое" width="267" height="267">
             <span class="price-ice"> 310 &#8381;/кг</span>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </article>
           <article class="ice-cream">
-            <img src="img/ice-cream-380.gif" alt="Сливочно-кофейное">
+            <img src="img/ice-cream-380.jpg" alt="Сливочно-кофейное" width="267" height="267">
             <span class="price-ice"> 380 &#8381;/кг</span>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           </article>
           <article class="ice-cream">
-            <img src="img/ice-cream-355.gif" alt="Сливочно-клубничное">
+            <img src="img/ice-cream-355-pink.jpg" alt="Сливочно-клубничное" width="267" height="267">
             <span class="price-ice"> 355 &#8381;/кг</span>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </article>
           <article class="ice-cream">
-            <img src="img/ice-cream-415.gif" alt="Сливочное крем-брюле">
+            <img src="img/ice-cream-415.jpg" alt="Сливочное крем-брюле" width="267" height="267">
             <span class="price-ice"> 415 &#8381;/кг</span>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </article>
@@ -132,7 +133,7 @@
         </section>
         <section class="subscribe">
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-          <form action="" name="" method="get">
+          <form action=""  method="get">
             <input type="email" name="email" placeholder="Электронная почта">
             <input type="submit" value="Отправить">
           </form>
@@ -157,10 +158,10 @@
     <div class="central-container">
       <footer class="gl-footer">
         <section class="social-icon">
-          <a href="https://twitter.com" class="icon tw"><img src="img/twitter.svg" alt="Twitter" title="Twitter"></a>
-          <a href="https://instagram.com" class="icon inst"><img src="img/instagram.svg" alt="Instagram" title="Instagram"></a>
-          <a href="https://facebook.com" class="icon fb"><img src="img/facebook.svg" alt="Facebook" title="Facebook"></a>
-          <a href="https://vk.com" class="icon vk"><img src="img/vkontakte.svg" alt="VKontakte" title="VKontakte"></a>
+          <a href="https://twitter.com" class="icon tw"><img src="img/twitter.svg" alt="Twitter" title="Twitter" width="32" height="32"></a>
+          <a href="https://instagram.com" class="icon inst"><img src="img/instagram.svg" alt="Instagram" title="Instagram" width="32" height="32"></a>
+          <a href="https://facebook.com" class="icon fb"><img src="img/facebook.svg" alt="Facebook" title="Facebook" width="32" height="32"></a>
+          <a href="https://vk.com" class="icon vk"><img src="img/vkontakte.svg" alt="VKontakte" title="VKontakte" width="32" height="32"></a>
         </section>
         <section class="materials">
           <div class="mat-left">
@@ -174,7 +175,7 @@
         </section>
         <section class="author">
           <div class="logo-academy">
-          <a href="https://htmlacademy.ru"><img src="img/html-logo.svg"></a>
+          <a href="https://htmlacademy.ru"><img src="img/html-logo.svg" alt="Логотип HTMLAcademy" width="108" height="37"></a>
           <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>&copy; 2016</p>
           </div>
         </section>
