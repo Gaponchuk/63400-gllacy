@@ -38,7 +38,7 @@ body{
 
 .menu a{
   display: block;
-  text-decoration: none;
+  text-decoration:underline;
   padding: 11px 13px;
   color: #fff;
 }
@@ -48,6 +48,7 @@ body{
   z-index: 10;
   width: 145px;
   margin: 0;
+  margin-top: 0px;
   padding: 0;
   left: -25px;
   top: 45px;
@@ -55,6 +56,7 @@ body{
   background-color: #fff;
   color: #000;
   border-radius: 5px;
+  display: none;
 }
 
 .catalog-hover a{
@@ -67,11 +69,60 @@ body{
   color: #000;
 }
 
-.catalog-hover{        /*с этим запутлся ппц*/
-  display:none ;
+li:hover .catalog-hover{
+  display: block;
 }
                     /*Стилизация поиска*/
-input[type="search"]{   /*запутлся*/
+.search-popup{
+  display: inline-block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  background-image: url("/img/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.2);
+  margin-left:500px;
+}
+
+.search-popup:hover{
+  background-image: url("/img/loupe-hover.svg");
+  background-color: #f8f7f4;
+}
+
+.search-popup form{
+  position: absolute;
+  z-index: 10;
+  top:40px;
+  left:-310px;
+  padding:20px 15px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  display: none;
+}
+
+input[type="search"]{
+  width: 309px;
+  font-size:14px;
+  line-height: 24px;
+  padding:0;
+  margin:0;
+  padding-left:14px;
+  padding-top:15px;
+  padding-bottom: 15px;
+  background-color: #ffe;  /*с цветом не могу разобраться, когда меняю все пропадает*/
+  border-radius: 7px;
+  border: 2px solid #d3d3d2;
+}
+
+.search-popup:hover form{
+  display: block;
+}
+
+/*конец ПОИСКв*/
 
 }
                     /*Стилизация входа*/
@@ -315,6 +366,7 @@ input[type="submit"]{
 }
 
 .feedback{
+  text-align: center;
   display:block;
   border-radius: 20px;
   color: #fff;
@@ -390,4 +442,63 @@ a.feedback{
   display: inline-block;
   text-decoration: none;
   color: #fff;
+}
+                    /*Стили для каталога Gllacy*/
+                    /*Стилизуем хлебную крошку*/
+.bread-crumbs{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+}
+
+.bread-crumbs a{
+  font-size: 14px;
+  line-height: 16px;
+  padding: 2px 10px 2px 0;
+  margin-right: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+
+.bread-crumbs a:after{
+  content: "»";
+  margin-left: 8px;
+}
+
+.bread-crumbs a:last-child{
+  border-bottom: none;
+}
+                    /*Стилизуем пагинацию*/
+.pagination{
+  display: block;
+  float: right;
+  vertical-align: top;
+}
+
+.pagination a{
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  vertical-align:baseline;
+  padding-top: 3px;
+  padding-right: 2px;
+}
+
+.pagination a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.pagination .inactive{
+  color: rgba(255,255,255,0.3);
+}
+
+.pagination span{
+  color:#fff;
 }
