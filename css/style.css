@@ -45,19 +45,21 @@ body{
 
 .catalog-hover{
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   width: 145px;
   margin: 0;
-  margin-top: 0px;
-  padding: 0;
+  margin-top:0px;
+  padding:0px;
+  margin: 0;
   left: -25px;
   top: 45px;
   text-align: center;
-  background-color: #fff;
   color: #000;
-  border-radius: 5px;
+  border-radius: 15px;
+  background-color: #fff;
   display: none;
 }
+
 
 .catalog-hover a{
   color:#000;
@@ -72,10 +74,10 @@ body{
 li:hover .catalog-hover{
   display: block;
 }
-                    /*Стилизация поиска*/
+                    /*Поиск попап*/
 .search-popup{
+  float: left;
   display: inline-block;
-  position: relative;
   width: 32px;
   height: 32px;
   margin: 0;
@@ -85,7 +87,7 @@ li:hover .catalog-hover{
   background-position: 50% 50%;
   border-radius: 50%;
   background-color: rgba(255,255,255,0.2);
-  margin-left:500px;
+  margin-right: 9px;
 }
 
 .search-popup:hover{
@@ -93,17 +95,15 @@ li:hover .catalog-hover{
   background-color: #f8f7f4;
 }
 
-.search-popup form{
+.bb form{
   position: absolute;
-  z-index: 10;
-  top:40px;
-  left:-310px;
+  z-index: 100;
   padding:20px 15px;
   background-color: #f8f7f4;
   border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.4);
   display: none;
 }
-
 input[type="search"]{
   width: 309px;
   font-size:14px;
@@ -113,7 +113,7 @@ input[type="search"]{
   padding-left:14px;
   padding-top:15px;
   padding-bottom: 15px;
-  background-color: #ffe;  /*с цветом не могу разобраться, когда меняю все пропадает*/
+  background-color: #ffe;  /*с цветом не могу разобраться*/
   border-radius: 7px;
   border: 2px solid #d3d3d2;
 }
@@ -122,13 +122,175 @@ input[type="search"]{
   display: block;
 }
 
+.search-popup:hover .bb{
+  display: block;
+}
+
+.search-popup .bb{
+  z-index: 200;
+  position: relative;
+  left: -308px;
+  top: 20px;
+  width: 340px;
+  padding-top: 20px;
+  height: 100px;
+  display: none;
+}
+
+
 /*конец ПОИСКв*/
 
+                /*Копка вход*/
+.login > a{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 10px 15px 10px 45px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+  text-decoration: none;
+  background-image: url(/img/login.svg);
+  background-repeat: no-repeat;
+  background-position:20% 50%;
+
 }
-                    /*Стилизация входа*/
-.login .log{            /*запутался*/
+
+.login > a:hover{
+  background-image: url(/img/login-hover.svg);
+  color: #000;
+  background-color: #fff;
+}
+
+.login {
+  float: left;
+  display: inline-block;
+  width:90px;
+  margin-right: 10px;
+}
+.bb2 form{
+  position: absolute;
+  top:13px;
+  z-index: 300;
+  width: 277px;
+  height: 255px;
+  background-color: #f8f7f4;
+  border-radius: 7px;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.4);
   display: block;
+}
+
+  .bb2 input[type="email"],
+  .bb2 input[type="password"]{
+  font-size: 14px;
+  width: 205px;
+  line-height: 24px;
+  margin-left: 19px;
+  margin-top: 20px;
+  padding-left: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  border: 1px solid #d3d3d2;
+  border-radius: 4px;
+  color: #999;
+}
+
+.bb2 input[type="submit"]{
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  padding: 10px 27px;
+  border-radius: 30px;
+  background-color: #ea573b;
+  float: left;
+  margin-left: 20px;
+}
+
+input[type="password"]{
+  margin-bottom: 20px;
+}
+
+.login:hover .bb2{
+  display:block;
+}
+.bb2{
+  z-index: 200;
+  top:-5px;
+  left: -190px;
   position: relative;
+  width: 277px;
+  height: 260px;
+  display: none;
+}
+
+form a{
+  font-size: 13px;
+  line-height: 24px;
+  display: inline-block;;
+  margin-left: 15px;
+  color: #000;
+}
+
+/*Закончил оформление кнопки входа*/
+
+/*Стилизация корзины*/
+
+.bascet{
+  float: left;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.bascet a{
+  display: inline-block;
+  padding: 8px 35px 8px 45px;
+  color:#fff;
+  background-color: rgba(255,255,255,0.2);
+  text-decoration: none;
+  background-image: url("/img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 15% 50%;
+  border-radius: 20px;
+}
+
+
+.bascet form{
+  display: none;
+
+}
+
+/*Конец стилизации корзины*/
+
+/*Время работы в шапке*/
+
+.info{
+  float:right;
+  display: inline-block;
+}
+
+.info p{
+  color:#fff;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+.info a{
+  color: #fff;
+  font-size: 22px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+header::after{
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 95px;
 }
 
 /*Стилизация акций*/
