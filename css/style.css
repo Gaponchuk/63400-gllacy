@@ -1,86 +1,131 @@
 body{
-  font-family: "Roboto", sans-sertif;/*семейство шрифтов*/
+  font-family: "Roboto", "Arial", sans-sertif;/*семейство шрифтов*/
   font-size: 16px;/*размер шрифта*/
   line-height: 22px; /*высота строки*/
   color: #000; /*цвет текста*/
   font-weight: normal;/*жирность шрифта*/
   padding: 0;
-  background-color: rgba(144, 166, 154, 0.8);
+  background-color: #849d8f;
+}
+
+body > input[type="radio"] {
+  display: none;
 }
                     /*Начало разметки основного содержания*/
-.central-container{
-  width: 1146px;
+.central-container {
+  width: 1200px;
   margin: 0 auto;
+  padding: 9px 27px 0px 27px;
+  outline: 1px solid #9dff00;
 }
 
-.gs-nav{
+.bg-all {
+  min-width: 940px;
+  background-color:#849d8f;
+  background-image: url(/img/ice-cream-green.png);
+  background-repeat: no-repeat;
+  background-position: 50% 6%;
+  transition: background-image 0.4s ease,
+              background-color 0.4s ease;
+}
+                    /*Навигация начало*/
+.gs-nav {
   float: left;
   width: 560px;
-  margin-right: 320px;
+  outline: 1px solid #9dff00;
 }
 
-.gs-nav .menu{
-  margin: 0;
+.gs-nav .menu {
+  margin-top: 5px;
   padding: 0;
   display: inline-block;
+  vertical-align:top;
 }
-
-.gs-nav ul{
+/*
+.gs-nav ul {
   list-style: none;
   vertical-align: top;
 }
-
-.menu li{
+*/
+.menu li {
   display: inline-block;
   position: relative;
-  line-height: 18px;
 }
 
-.menu a{
-  display: block;
+.menu a {
+  display: inline-block;
   text-decoration:underline;
   padding: 11px 13px;
   color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+
 }
 
-.catalog-hover{
+.ch{
   position: absolute;
-  z-index: 100;
-  width: 145px;
+  top: 40px;
+  left: -5px;
+  height: 280px;
+  padding-top: 10px;
+  display: none;
+}
+
+.ch a{
+  width: 113px;
+  text-align: left;
+  color:#000;
+  display:block;
+  text-decoration: none;
+  padding: 0;
+  padding-top:12px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+  padding-right: 5px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.catalog-hover {
+  z-index: 3300;
   margin: 0;
   margin-top:0px;
   padding:0px;
+  padding-left: 6px;
+  padding-right: 6px;
   margin: 0;
-  left: -25px;
-  top: 45px;
   text-align: center;
   color: #000;
   border-radius: 15px;
   background-color: #fff;
-  display: none;
 }
 
-
-.catalog-hover a{
-  color:#000;
-}
-
-.menu a:hover{
-  border-radius: 20px;
+.menu a:hover {
+  border-radius: 50px;
   background-color: #fff;
   color: #000;
 }
 
-li:hover .catalog-hover{
+li:hover .ch {
   display: block;
 }
+
+.ch li:first-child {
+  border-bottom: 1px solid #d1d0ce;
+  font-weight: bold;
+}
+
+.ch a:hover{
+  background-color: #fbded7;
+  border-radius: 0px;
+}
                     /*Поиск попап*/
-.search-popup{
+.search-popup {
   float: left;
   display: inline-block;
   width: 32px;
   height: 32px;
-  margin: 0;
   padding: 0;
   background-image: url("/img/loupe.svg");
   background-repeat: no-repeat;
@@ -88,23 +133,26 @@ li:hover .catalog-hover{
   border-radius: 50%;
   background-color: rgba(255,255,255,0.2);
   margin-right: 9px;
+  margin-left: 325px;
+  margin-top: 12px;
 }
 
-.search-popup:hover{
+.search-popup:hover {
   background-image: url("/img/loupe-hover.svg");
   background-color: #f8f7f4;
 }
 
-.bb form{
+.bb form {
   position: absolute;
   z-index: 100;
   padding:20px 15px;
   background-color: #f8f7f4;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 20px 20px rgba(0,0,0,0.4);
   display: none;
 }
-input[type="search"]{
+
+input[type="search"] {
   width: 309px;
   font-size:14px;
   line-height: 24px;
@@ -113,20 +161,21 @@ input[type="search"]{
   padding-left:14px;
   padding-top:15px;
   padding-bottom: 15px;
-  background-color: #ffe;  /*с цветом не могу разобраться*/
+  background-color: #fff;  /*с цветом не могу разобраться*/
   border-radius: 7px;
-  border: 2px solid #d3d3d2;
+  border: 1px solid #d3d3d2;
+  color: #999999;
 }
 
-.search-popup:hover form{
+.search-popup:hover form {
   display: block;
 }
 
-.search-popup:hover .bb{
+.search-popup:hover .bb {
   display: block;
 }
 
-.search-popup .bb{
+.search-popup .bb {
   z-index: 200;
   position: relative;
   left: -308px;
@@ -136,27 +185,24 @@ input[type="search"]{
   height: 100px;
   display: none;
 }
-
-
-/*конец ПОИСКв*/
-
-                /*Копка вход*/
-.login > a{
+                    /*конец ПОИСКв*/
+                    /*Копка вход*/
+.login > a {
   display: inline-block;
   font-size: 14px;
   line-height: 16px;
   padding: 10px 15px 10px 45px;
-  border-radius: 20px;
+  border-radius: 50px;
   background-color: rgba(255,255,255,0.2);
   color: #fff;
   text-decoration: none;
   background-image: url(/img/login.svg);
   background-repeat: no-repeat;
   background-position:20% 50%;
-
+  margin-top: 12px;
 }
 
-.login > a:hover{
+.login > a:hover {
   background-image: url(/img/login-hover.svg);
   color: #000;
   background-color: #fff;
@@ -166,12 +212,11 @@ input[type="search"]{
   float: left;
   display: inline-block;
   width:90px;
-  margin-right: 10px;
+  margin-right: 9px;
 }
-.bb2 form{
+.bb2 form {
   position: absolute;
   top:13px;
-  z-index: 300;
   width: 277px;
   height: 255px;
   background-color: #f8f7f4;
@@ -181,7 +226,7 @@ input[type="search"]{
 }
 
   .bb2 input[type="email"],
-  .bb2 input[type="password"]{
+  .bb2 input[type="password"] {
   font-size: 14px;
   width: 205px;
   line-height: 24px;
@@ -216,6 +261,7 @@ input[type="password"]{
 .login:hover .bb2{
   display:block;
 }
+
 .bb2{
   z-index: 200;
   top:-5px;
@@ -233,15 +279,12 @@ form a{
   margin-left: 15px;
   color: #000;
 }
-
-/*Закончил оформление кнопки входа*/
-
-/*Стилизация корзины*/
-
+                    /*Конец оформления кнопки входа*/
+                    /*Стилизация корзины*/
 .bascet{
   float: left;
   display: inline-block;
-  margin: 0;
+  margin-top: 12px;
   padding: 0;
 }
 
@@ -257,16 +300,12 @@ form a{
   border-radius: 20px;
 }
 
-
 .bascet form{
   display: none;
 
 }
-
-/*Конец стилизации корзины*/
-
-/*Время работы в шапке*/
-
+                    /*Конец стилизации корзины*/
+                    /*Время работы в шапке*/
 .info{
   float:right;
   display: inline-block;
@@ -286,6 +325,124 @@ form a{
   text-decoration: none;
 }
 
+                    /*Начало слайдера*/
+.slader{
+  position: relative;
+  padding-top: 270px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.slide-title{
+  width: 700px;
+  margin:0 auto;
+  margin-bottom: 30px;
+  font-size:60px;
+  font-weight:900;
+  line-height: 60px;
+}
+
+.slider-btn{
+  display: inline-block;
+  padding: 12px 40px;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0px 2px 5px rgba(160,32,11,0.76);
+  background: #ea573b;
+  background: -moz-linear-gradient(top, #f26843 0%, #e74b36 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74b36 100%);
+  background: linear-gradient(to bottom, #f26843 0%, #e74b36 100%);
+  box-shadow: 0px 2px 2px rgba(172,16,0,0.64);
+  border-radius: 50px;
+}
+
+.slider-btn:hover{
+  background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -mwebkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0px 2px 2px rgba(172,16,0,1);
+}
+
+.slider-btn:active{
+  background: -moz-linear-gradient:(top, #d84833 0%, #e1613e 100%);
+  background: -webkit-linear-gradient:(top, #d84833 0%, #e1613e 100%);
+  background: linear-gradient:(to bottom, #d84833 0%, #e1613e 100%);
+  box-shadow: inset 0px 2px 2px rgba(176,16,0,1);
+}
+
+.slider-controls{
+  position: absolute;
+  top: 635px;              /*ERROR*/
+  left:20px;
+  z-index: 20;
+  font-size: 0;
+}
+
+.slider-controls label{
+  display: inline-block;
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  background-color: transparent;
+  border:1px solid #fff;
+  border-radius:50%;
+  cursor: pointer;
+}
+
+.slide{
+  display: none;
+}
+
+#img-1:checked ~ .bg-all #slide1,
+#img-2:checked ~ .bg-all #slide2,
+#img-3:checked ~ .bg-all #slide3 {
+  display: block;
+}
+
+#img-1:checked ~ .bg-all label[for="img-1"],
+#img-2:checked ~ .bg-all label[for="img-2"],
+#img-3:checked ~ .bg-all label[for="img-3"] {
+  background-color:#fff;
+}
+
+#img-1:checked ~ .bg-all{
+  background-color: #849d8f;
+  background-image: url("/img/ice-cream-green.png");
+}
+
+#img-2:checked ~ .bg-all{
+  background-color:#8996a6;
+  background-image: url(/img/ice-cream-blue.png);
+}
+
+#img-3:checked ~ .bg-all{
+  background-color: #9d8b84;
+  background-image: url("/img/ice-cream-brown.png");
+}
+
+.bg-all:before,
+.bg-all:after {
+  content: "";
+  visibility:hidden;
+}
+
+.bg-all:before {
+  background-image: url("/img/ice-cream-blue.png");
+}
+
+.bg:after {
+  background-image: url("/img/ice-cream-brown.png");
+}
+                    /*Конец слайдера*/
+header{
+  height: 275px;
+}
 header::after{
   content: "";
   display: table;
@@ -293,7 +450,7 @@ header::after{
   margin-bottom: 95px;
 }
 
-/*Стилизация акций*/
+                    /*Стилизация акций*/
 .action{
   display: inline-block;
   width:560px;
@@ -481,6 +638,7 @@ input[type="submit"]{
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .central-container{

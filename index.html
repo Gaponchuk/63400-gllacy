@@ -7,17 +7,17 @@
     <meta name="keywords" content="мороженое собственного производства, настоящее мороженое, настоящее мороженое на развес">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700,900,400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
   </head>
   <body>
   <!--Начало слайдера-->
-    <label for="img-1"></label>
-    <label for="img-2"></label>
-    <label for="img-3"></label>
+    <input type="radio" id="img-1" name="toggle" checked>
+    <input type="radio" id="img-2" name="toggle">
+    <input type="radio" id="img-3" name="toggle">
   <!--Конец слайдера-->
+  <div class="bg-all">
     <div class="central-container">
-    <input id="img-1" type="radio" name="sliders">
-    <input id="img-2" type="radio" name="sliders">
-    <input id="img-3" type="radio" name="sliders">
   <!--Начало шапки сайта-->
       <header>
   <!--Начало навигации-->
@@ -25,6 +25,7 @@
           <img title="Gllasy Shop" alt="Логотип Gllacy Shop" src="img/logo.svg" width="154" height="64">
           <ul class="menu">
             <li><a href="#">Каталог</a>
+            <div class="ch">
               <ul class="catalog-hover">
                 <li><a href="#">Новинки</a></li>
                 <li><a href="catalog-gs.html">Сливочное</a></li>
@@ -32,6 +33,7 @@
                 <li><a href="#">Фруктовый лёд</a></li>
                 <li><a href="#">Мелорин</a></li>
               </ul>
+            </div>
             </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О Компании</a></li>
@@ -85,6 +87,29 @@
           <a href="tel:88124502525">8 812 450-25-25</a>
         </section>
       </header>
+      <!--Слайдер - начало-->
+      <div class="slader">
+        <div class="slide" id="slide1">
+          <div class="slide-title">Крем-брюле и пломбир
+с малиновым джемом</div>
+          <a href="#" class="slider-btn">Давайте оба!</a>
+        </div>
+        <div class="slide" id="slide2">
+          <div class="slide-title">Шоколадный пломбир
+и лимонный сорбет </div>
+          <a href="#" class="slider-btn">Давайте оба!</a>
+        </div>
+        <div class="slide" id="slide3">
+          <div class="slide-title">Пломбир с помадкой
+и клубничный щербет</div>
+          <a href="#" class="slider-btn">Давайте оба!</a>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <label for="img-1"></label>
+        <label for="img-2"></label>
+        <label for="img-3"></label>
+      </div>
   <!--Конец шапки-->
   <!--Начало основного содержания-->
       <main class="content">
@@ -146,10 +171,8 @@
         </section>
       </main>
   <!--Конец основного блока-->
-    </div>
   <!--Начало области с картой-->
     <div class="map"> <!--Картинку карты вставить через background-->
-      <div class="central-container">
         <article class="map-info">
         <span>Адрес главного офиса и офлайн магазина:</span>
         <address>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</address>
@@ -159,9 +182,8 @@
         <a class="feedback" href="#">Форма обратной связи</a>
         </article>
       </div>
-    </div>
   <!--Начало футера-->
-    <div class="central-container">
+
       <footer class="gl-footer">
         <section class="social-icon">
           <a href="https://twitter.com" class="icon tw"><img src="img/twitter.svg" alt="Twitter" title="Twitter" width="32" height="32"></a>
@@ -186,6 +208,7 @@
           </div>
         </section>
       </footer>
+    </div>
     </div>
   </body>
 </html>
