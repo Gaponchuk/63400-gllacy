@@ -15,7 +15,6 @@ body > input[type="radio"] {
 .central-container {
   width: 1200px;
   margin: 0 auto;
-  padding: 9px 27px 0px 27px;
   outline: 1px solid #9dff00;
 }
 
@@ -24,7 +23,7 @@ body > input[type="radio"] {
   background-color:#849d8f;
   background-image: url(/img/ice-cream-green.png);
   background-repeat: no-repeat;
-  background-position: 50% 6%;
+  background-position: 50% 4%;
   transition: background-image 0.4s ease,
               background-color 0.4s ease;
 }
@@ -290,7 +289,8 @@ form a{
 
 .bascet a{
   display: inline-block;
-  padding: 8px 35px 8px 45px;
+  padding: 8px 34px 8px 42px;
+  padding: 8px 34px 8px 42px;
   color:#fff;
   background-color: rgba(255,255,255,0.2);
   text-decoration: none;
@@ -317,8 +317,10 @@ form a{
   line-height: 16px;
   margin-bottom: 5px;
   text-align: right;
+  font-weight: bold;
 }
 .info a{
+  font-weight: bold;
   color: #fff;
   font-size: 22px;
   line-height: 24px;
@@ -328,16 +330,18 @@ form a{
                     /*Начало слайдера*/
 .slader{
   position: relative;
-  padding-top: 270px;
+  padding-top: 230px;
   text-align: center;
   color: #fff;
   margin-bottom: 40px;
+  margin-left: 27px;
+  margin-right: 27px;
 }
 
 .slide-title{
   width: 700px;
-  margin:0 auto;
-  margin-bottom: 30px;
+  margin:-118px auto;
+  margin-bottom: 35px;
   font-size:60px;
   font-weight:900;
   line-height: 60px;
@@ -363,7 +367,7 @@ form a{
 
 .slider-btn:hover{
   background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: -mwebkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0px 2px 2px rgba(172,16,0,1);
 }
@@ -377,8 +381,8 @@ form a{
 
 .slider-controls{
   position: absolute;
-  top: 635px;              /*ERROR*/
-  left:20px;
+  top: 575px;
+  left:27px;
   z-index: 20;
   font-size: 0;
 }
@@ -393,6 +397,11 @@ form a{
   border:1px solid #fff;
   border-radius:50%;
   cursor: pointer;
+}
+
+.slider-controls label:hover{
+  border:1px solid white;
+  background-color: rgba(248,247,244,0.4);
 }
 
 .slide{
@@ -411,17 +420,17 @@ form a{
   background-color:#fff;
 }
 
-#img-1:checked ~ .bg-all{
+#img-1:checked ~ .bg-all {
   background-color: #849d8f;
   background-image: url("/img/ice-cream-green.png");
 }
 
-#img-2:checked ~ .bg-all{
+#img-2:checked ~ .bg-all {
   background-color:#8996a6;
   background-image: url(/img/ice-cream-blue.png);
 }
 
-#img-3:checked ~ .bg-all{
+#img-3:checked ~ .bg-all {
   background-color: #9d8b84;
   background-image: url("/img/ice-cream-brown.png");
 }
@@ -440,8 +449,10 @@ form a{
   background-image: url("/img/ice-cream-brown.png");
 }
                     /*Конец слайдера*/
-header{
+header {
   height: 275px;
+  margin-left: 27px;
+  margin-right: 27px;
 }
 header::after{
   content: "";
@@ -451,9 +462,15 @@ header::after{
 }
 
                     /*Стилизация акций*/
-.action{
+main {
+  margin-left: 27px;
+  margin-right: 27px;
+}
+
+.action {
   display: inline-block;
   width:560px;
+  height: 229px;
   border-radius: 20px;
   color: #fff;
   margin-bottom: 40px;;
@@ -461,18 +478,38 @@ header::after{
   vertical-align: top;
 }
 
-.action a{
+.action a {
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
   line-height: 24px;
+  font-weight: bold;
   color: #fff;
-  padding: 15px;
-  border-radius: 30px;
+  padding: 15px 22px;
+  border-radius: 50px;
   background-color: #ea573b;
   margin-bottom: 23px;
   float: right;
   margin-right: 21px;
+  box-shadow: 0px 2px 2px rgba(172,16,0,0.54);
+  background: #cb3926;
+  background: -moz-linear-gradient(top, #f26843 0%, #cb3926 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #cb3926 100%);
+  background: linear-gradient(to bottom, #f26843 0%, #cb3926 100%);
+}
+
+.action a:hover{
+  background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0px 1px 2px rgba(172,16,0,1);
+}
+
+.action a:active{
+  background: -moz-linear-gradient(top, #d74632 0%, #e1613e 100%;);
+  background: -webkit-linear-gradient(top, #d74632 0%, #e1613e 100%;);
+  background: linear-gradient(to bottom, #d74632 0%, #e1613e 100%;);
+  box-shadow: inset 0px 1px 2px rgba(172,16,0,1);
 }
 
 .action h2{
@@ -481,65 +518,92 @@ header::after{
   max-width: 320px;
   margin-left:20px;
   margin-top: 23px;
+  font-weight: bold;
 }
 
 .action p{
   width: 520px;
   font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
   margin-left:20px;
 }
 
-.razz-left{
+.razz-left {
   background-image: url("/img/bg-crimson-baner.jpg");
   margin-right: 13px;
 }
 
-.chocolate{
+.chocolate {
   background-image: url("/img/bg-chocolate-baner.jpg");
   float: right;
   margin-left: 13px;
 }
 
                     /*Стилизация блока с мороженым основная страница*/
-.ice-cream-gal{
+.ice-cream-gal {
   display: inline-block;
-  width: 1146px;
   margin-bottom: 40px;
   padding: 0;
   font-size: 0;
 }
 
-.ice-cream{
+.ice-cream {
   display: inline-block;
   margin: 0;
   padding: 0;
   width: 267px;
   vertical-align: top;
-  font-size: 16px;
-  line-height: 22px;
   margin-right: 26px;
   text-align: center;
   color: #fff;
+  position: relative;
+  line-height: 0px;
 }
 
-.ice-cream img{
+.ice-cream:before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  background: url(/img/hit.png);
+}
+
+.ice-cream img {
   width: 267px;
   height: 267px;
 }
 
-.ice-cream a{
+.ice-cream a {
   color: #fff;
+  font-size: 16px;
+  line-height: 22px;
 }
 
-.ice-cream:nth-child(4n){
+
+.ice-cream:nth-child(4n) {
   margin-right: 0;
 }
 
-.ice-cream img{
+.ice-cream img {
   border-radius: 50%;
 }
+
+.price-ice {
+  position: absolute;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  top:205px;
+  left: 0;
+}
+
+.price-ice span{
+  font-size: 30px;
+}
                     /*Раздел "Преимущества"*/
-.better{
+.better {
   background-image: url("/img/bg-better.png");
   border-radius: 15px;
   padding: 21px;
@@ -549,6 +613,13 @@ header::after{
 .better h1{
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.better p{
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .better .left{
@@ -556,9 +627,38 @@ header::after{
   width: 538px;
 }
 
+.left p,
+.right p {
+  padding-left: 55px;
+}
+
+.plus-1{
+  background-image: url("/img/ice-better.svg");
+  background-repeat: no-repeat;
+  padding-top:15px;
+}
+
+.plus-2{
+  background-image: url(/img/better-sheet.svg);
+  background-repeat: no-repeat;
+  padding-top: 15px;
+}
+
 .better .right{
   float:right;
   width: 538px;
+}
+
+.plus-3{
+  background-image: url("/img/better-cow.svg");
+  background-repeat: no-repeat;
+  padding-top: 15px;
+}
+
+.plus-4{
+  background-image: url("/img/better-thermo.svg");
+  background-repeat: no-repeat;
+  padding-top: 15px;
 }
 
 .better::after{
@@ -706,6 +806,8 @@ a.feedback{
 .gl-footer{
   margin: 0;
   padding-bottom: 10px;
+  margin-left: 27px;
+  margin-right: 27px;
 }
 
 .gl-footer::after{
@@ -721,13 +823,32 @@ a.feedback{
   margin-top: 35px;
 }
 
+.social-icon:first-child{
+  margin-left: 0px;
+}
+
 .icon{
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 31px;
+  height: 31px;
   margin-right: 10px;;
 }
 
+.tw {
+  background-image: url(/img/twitter.svg);
+}
+
+.inst {
+  background-image: url("/img/instagram.svg");
+}
+
+.fb {
+  background-image: url("/img/facebook.svg");
+}
+
+.vk {
+  background-image: url("/img/vkontakte.svg");
+}
 .materials{
   display: inline-block;
   float: left;
