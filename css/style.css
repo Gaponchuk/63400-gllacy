@@ -135,8 +135,8 @@ li:hover .ch {
 .search-popup {
   float: left;
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   padding: 0;
   background-image: url("/img/loupe.svg");
   background-repeat: no-repeat;
@@ -160,7 +160,7 @@ li:hover .ch {
   background-color: #f8f7f4;
   border-radius: 8px;
   box-shadow: 0 20px 20px rgba(0,0,0,0.4);
-  display: non;
+  display: none;
 }
 
 input[type="search"] {
@@ -302,8 +302,7 @@ form a{
 
 .bascet a{
   display: inline-block;
-  padding: 8px 34px 8px 42px;
-  padding: 8px 34px 8px 42px;
+  padding: 8px 30px 8px 42px;
   color:#fff;
   background-color: rgba(255,255,255,0.2);
   text-decoration: none;
@@ -314,6 +313,33 @@ form a{
 }
 
 .bascet form{
+  display: none;
+
+}
+                    /*Полная корзина*/
+.bascet-full{
+  float: left;
+  display: inline-block;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.bascet-full a{
+  display: inline-block;
+  padding: 11px 13px 11px 42px;
+  color:#000;
+  background-color: #f7f6f3;
+  text-decoration: none;
+  background-image: url("/img/basket-full.png");
+  background-repeat: no-repeat;
+  background-position: 15% 50%;
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.bascet-full form{
   display: none;
 
 }
@@ -515,7 +541,8 @@ main {
 
 .action a,
 input[type="submit"],
-.feedback{
+.feedback,
+.fast-see {
   box-shadow: 0px 2px 2px rgba(172,16,0,0.54);
   background: #cb3926;
   background: -moz-linear-gradient(top, #f26843 0%, #cb3926 100%);
@@ -525,7 +552,8 @@ input[type="submit"],
 
 .action a:hover,
 input[type="submit"]:hover,
-.feedback:hover {
+.feedback:hover,
+.fast-see:hover {
   background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
@@ -534,7 +562,8 @@ input[type="submit"]:hover,
 
 .action a:active,
 input[type="submit"]:active,
-.feedback:active {
+.feedback:active,
+.fast-see:active{
   background: -moz-linear-gradient(top, #d74632 0%, #e1613e 100%;);
   background: -webkit-linear-gradient(top, #d74632 0%, #e1613e 100%;);
   background: linear-gradient(to bottom, #d74632 0%, #e1613e 100%;);
@@ -570,6 +599,10 @@ input[type="submit"]:active,
 }
 
                     /*Стилизация блока с мороженым основная страница*/
+.ice-cream-bottom{
+  margin-bottom: 55px;
+}
+
 .ice-cream-gal {
   display: inline-block;
   padding: 0;
@@ -577,6 +610,7 @@ input[type="submit"]:active,
 }
 
 .ice-cream {
+  position: relative;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -609,6 +643,8 @@ input[type="submit"]:active,
 }
 
 .ice-cream a {
+  position: relative;
+  z-index: 15;
   font-size: 16px;
   line-height: 22px;
 }
@@ -633,6 +669,37 @@ input[type="submit"]:active,
 
 .price-ice span {
   font-size: 30px;
+}
+                    /*Hover для блока с мороженым(бвстрый просмотр)*/
+.ice-cream:hover .hover-ice{
+  display: block;
+}
+.ice-cream:hover .name {
+  position: relative;
+  z-index: 1120;
+}
+
+.hover-ice{
+  z-index: 222;
+  width: 278px;
+  height: 405px;
+  position: absolute;
+  top: -5px;;
+  left: -5px;
+  background-color: rgba(255,255,255,0.2);
+  display: none;
+  border-radius: 5px;
+}
+
+.fast-see{
+  position: absolute;
+  top: 340px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 16px;
+  border-radius: 50px;
 }
                     /*Раздел "Преимущества"*/
 .better {
@@ -865,6 +932,12 @@ input[type="submit"] {
   padding-bottom: 10px;
   margin-left: 27px;
   margin-right: 27px;
+  margin-top: 20px;
+}
+
+.footer-catalog{
+  border-top: 1px solid rgba(255,255,255,0.3);
+  margin-top: 60px;
 }
 
 .gl-footer::after {
@@ -950,9 +1023,10 @@ input[type="submit"] {
   display: inline-block;
   float: left;
   vertical-align: top;
-  margin-top: 30px;
+  margin-top: 35px;
   margin-left:213px;
   margin-right: 230px;
+  margin-bottom: 35px;
 }
 
 .materials a {
@@ -1210,9 +1284,19 @@ input[type="checkbox"]:checked + label:before{
 
                     /*Стилизуем пагинацию*/
 .pagination {
-  display: block;
   float: right;
   vertical-align: top;
+}
+
+.pagination::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pagination .active{
+  background-color: #fff;
+  color: #000;
 }
 
 .pagination a {
