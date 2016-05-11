@@ -34,6 +34,7 @@ body > input[type="radio"] {
 
 .gs-nav img {
   margin-top: 6px;
+  margin-right: 7px;
 }
 
 .gs-nav .menu {
@@ -41,48 +42,36 @@ body > input[type="radio"] {
   padding: 0;
   display: inline-block;
   vertical-align:top;
-}
-/*
-.gs-nav ul {
   list-style: none;
-  vertical-align: top;
 }
-*/
+
 .menu li {
   display: inline-block;
   position: relative;
 }
 
 .menu a {
-  display: inline-block;
+  display: block;
   text-decoration:underline;
-  padding: 11px 13px;
+  padding: 7px 13px;
   color: #fff;
   font-size: 16px;
   line-height: 18px;
-
-}
-
-.active-catalog {
-  background-color: #d07058;
-  color: #fff;
-  padding: 10px 14px;
   font-weight: bold;
-  border-radius:50px;
 }
 
 .ch {
   position: absolute;
-  width: 150px;
-  top: 40px;
+  width: 143px;
+  top: 32px;
   left: -5px;
   height: 215px;
   padding-top: 10px;
   display: none;
+
 }
 
 .ch a {
-  width: 113px;
   text-align: left;
   color:#000;
   display:block;
@@ -90,46 +79,82 @@ body > input[type="radio"] {
   padding: 0;
   padding-top:12px;
   padding-bottom: 14px;
-  padding-left: 15px;
+  padding-left: 21px;
   padding-right: 5px;
   margin: 0px;
   font-size: 14px;
   line-height: 16px;
+  font-weight: normal;
 }
 
 .catalog-hover {
+  width: 143px;
   position: absolute;
   z-index: 3300;
   margin: 0;
-  margin-top:0px;
   padding:0px;
-  padding-left: 6px;
-  padding-right: 6px;
-  margin: 0;
   text-align: center;
-  color: #000;
-  border-radius: 15px;
+  /*color: #000;*/
+  border-radius: 8px;
   background-color: #fff;
+   overflow: hidden;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.4);
 }
 
-.menu a:hover {
+.catalog-hover li {
+  width: 100%;
+}
+
+.menu li:hover {
   border-radius: 50px;
   background-color: #fff;
   color: #000;
+}
+
+.menu li:hover a {
+  color: #000;
+  text-decoration: none;
 }
 
 li:hover .ch {
   display: block;
 }
 
-.ch li:first-child {
-  border-bottom: 1px solid #d1d0ce;
-  font-weight: bold;
+.catalog-hover .border {
+  position: relative;
 }
 
-.ch a:hover{
-  background-color: #fbded7;
+.catalog-hover .border::after {
+  content: "";
+  position:absolute;
+  width: 130px;
+  height:1px;
+  left:6px;
+  bottom: 0;
+  background-color: #d1d0ce;
+}
+
+.border a{
+  font-weight:bold;
+}
+
+.catalog-hover .active{
+  background-color: #fbded8;
+}
+
+.ch li:hover{
+  background-color: #fbded8;
   border-radius: 0px;
+}
+
+.active-catalog{
+  padding: 13px 15px;
+  background-color: #d07058;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 6px;
+  font-weight:bold;
 }
                     /*Поиск попап*/
 .search-popup {
@@ -251,6 +276,7 @@ input[type="search"] {
   border: 1px solid #d3d3d2;
   border-radius: 4px;
   color: #999;
+    outline: none;
 }
 
 .bb2 input[type="submit"]{
@@ -925,6 +951,7 @@ input[type="submit"] {
   margin-top: 18px;
   padding: 13px 28px;
   font-size: 18px;
+  outline: none;
 }
                     /*Футер*/
 .gl-footer {
