@@ -74,7 +74,7 @@ body > input[type="radio"] {
 .ch a {
   text-align: left;
   color:#000;
-  display:block;
+  display: block;
   text-decoration: none;
   padding: 0;
   padding-top:12px;
@@ -138,13 +138,12 @@ li:hover .ch {
   font-weight:bold;
 }
 
-.catalog-hover .active{
+.catalog-hover a:hover {
   background-color: #fbded8;
 }
 
-.ch li:hover{
-  background-color: #fbded8;
-  border-radius: 0px;
+.catalog-hover a:active {
+  background-color: #f6b5a5;
 }
 
 .active-catalog{
@@ -155,6 +154,11 @@ li:hover .ch {
   font-size: 14px;
   line-height: 6px;
   font-weight:bold;
+}
+
+.menu .active-catalog:hover{
+  background-color: #d07058;
+  color: #fff;
 }
                     /*Поиск попап*/
 .search-popup {
@@ -276,7 +280,7 @@ input[type="search"] {
   border: 1px solid #d3d3d2;
   border-radius: 4px;
   color: #999;
-    outline: none;
+  outline: none;
 }
 
 .bb2 input[type="submit"]{
@@ -344,6 +348,7 @@ form a{
 }
                     /*Полная корзина*/
 .bascet-full{
+  position: relative;
   float: left;
   display: inline-block;
   margin-top: 12px;
@@ -352,7 +357,7 @@ form a{
 
 .bascet-full a{
   display: inline-block;
-  padding: 11px 13px 11px 42px;
+  padding: 10px 13px 10px 42px;
   color:#000;
   background-color: #f7f6f3;
   text-decoration: none;
@@ -365,9 +370,117 @@ form a{
   font-weight: 500;
 }
 
-.bascet-full form{
-  display: none;
+table{
+  border-collapse: collapse;
+  display: table;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000;
+}
 
+.bascet-hover{
+  position: absolute;
+  right: 0;
+  width: 550px;
+  height: 250px;
+  display: none;
+  top:30px;
+}
+
+.bascet-hover img{
+  border-radius: 50%;
+}
+
+.bascet-hover span{
+  color: #999999;
+}
+
+td{
+  padding: 8px;
+}
+
+td:nth-child(1){
+  padding-left: 0px;
+}
+
+td:nth-child(3){
+  width: 216px;
+  padding-right: 21px;
+}
+
+td:nth-child(4),
+td:nth-child(5){
+  padding-right: 13px;
+}
+
+tr{
+  position: relative;
+}
+table::after{
+  position: absolute;
+  content: "";
+  width: 504px;
+  height: 1px;
+  background-color: #cacac7;
+}
+
+button{
+  outline: none;
+  border-style: none;
+  background-color:transparent;
+  width: 15px;
+  height: 15px;
+  background-image: url("/img/delete.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+caption{
+  margin-top: 15px;
+  margin-bottom: 18px;
+  caption-side: bottom;
+  text-align: right;
+  font-size: 15px;
+  line-height:18px;
+  font-weight:bold;
+}
+
+caption span{
+  color: #6b6b6a;
+}
+
+.bascet-full form{
+  top:10px;
+  position: absolute;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  width: 505px;
+  padding:12px 20px;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+}
+
+.bascet-hover input[type="submit"]{
+  float: right;
+  font-size: 18px;
+  line-height:24px;
+  font-weight:bold;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 50px;
+  outline: 0;
+  border-style: none;
+}
+
+.bascet-full form::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bascet-full:hover .bascet-hover{
+  display: block;
 }
                     /*Конец стилизации корзины*/
                     /*Время работы в шапке*/
