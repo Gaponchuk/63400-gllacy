@@ -22,7 +22,7 @@ body > input[type="radio"] {
   background-color:#849d8f;
   background-image: url(/img/ice-cream-green.png);
   background-repeat: no-repeat;
-  background-position: 50% 4%;
+  background-position: 50% 4.4%;
   transition: background-image 0.4s ease,
               background-color 0.4s ease;
 }
@@ -33,12 +33,13 @@ body > input[type="radio"] {
 }
 
 .gs-nav img {
-  margin-top: 6px;
-  margin-right: 7px;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: -6px;
 }
 
 .gs-nav .menu {
-  margin-top: 12px;
+  margin-top: 21px;
   padding: 0;
   display: inline-block;
   vertical-align:top;
@@ -52,34 +53,34 @@ body > input[type="radio"] {
 
 .menu a {
   display: block;
-  text-decoration:underline;
+  text-decoration: underline;
   padding: 7px 13px;
   color: #fff;
   font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
+  line-height: 21px;
+  font-weight: 700;
 }
 
 .ch {
   position: absolute;
-  width: 143px;
-  top: 32px;
-  left: -5px;
+  width: 144px;
+  top: 29px;
+  left: -3px;
   height: 215px;
   padding-top: 10px;
   display: none;
-
 }
 
 .ch a {
   text-align: left;
   color:#000;
-  display: block;
+  display:block;
   text-decoration: none;
+  text-align: left;
   padding: 0;
-  padding-top:12px;
-  padding-bottom: 14px;
-  padding-left: 21px;
+  padding-top:7px;
+  padding-bottom: 11px;
+  padding-left: 20px;
   padding-right: 5px;
   margin: 0px;
   font-size: 14px;
@@ -95,25 +96,29 @@ body > input[type="radio"] {
   padding:0px;
   text-align: center;
   /*color: #000;*/
-  border-radius: 8px;
+  border-radius: 5px;
   background-color: #fff;
-   overflow: hidden;
+  overflow: hidden;
   box-shadow: 0 20px 20px rgba(0,0,0,0.4);
 }
 
 .catalog-hover li {
+  display: block;
   width: 100%;
-}
-
-.menu li:hover {
-  border-radius: 50px;
-  background-color: #fff;
-  color: #000;
+  height: 34px;
 }
 
 .menu li:hover a {
   color: #000;
   text-decoration: none;
+
+}
+
+.menu > li:hover{
+  background-color: #fff;
+  color: #000;
+  border-radius: 50px;
+  color: #000;
 }
 
 li:hover .ch {
@@ -147,13 +152,20 @@ li:hover .ch {
 }
 
 .active-catalog{
-  padding: 13px 15px;
+  padding: 15px 18px 13px 20px;
   background-color: #d07058;
   color: #fff;
   border-radius: 50px;
   font-size: 14px;
   line-height: 6px;
   font-weight:bold;
+  margin-left: 2px;
+  margin-right: -5px;
+  cursor: pointer;
+}
+
+.active-catalog:active{
+
 }
 
 .menu .active-catalog:hover{
@@ -164,17 +176,17 @@ li:hover .ch {
 .search-popup {
   float: left;
   display: inline-block;
-  width: 36px;
-  height: 36px;
+  width: 31px;
+  height: 31px;
   padding: 0;
   background-image: url("/img/loupe.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-radius: 50%;
   background-color: rgba(255,255,255,0.2);
-  margin-right: 9px;
+  margin-right: 13px;
   margin-left: 325px;
-  margin-top: 12px;
+  margin-top: 21px;
 }
 
 .search-popup:hover {
@@ -185,7 +197,8 @@ li:hover .ch {
 .bb form {
   position: absolute;
   z-index: 100;
-  padding:20px 15px;
+  width: 310px;
+  padding:14px 17px;
   background-color: #f8f7f4;
   border-radius: 8px;
   box-shadow: 0 20px 20px rgba(0,0,0,0.4);
@@ -198,9 +211,11 @@ input[type="search"] {
   line-height: 24px;
   padding:0;
   margin:0;
-  padding-left:14px;
-  padding-top:15px;
-  padding-bottom: 15px;
+  padding-left:12px;
+  padding-top:8px;
+  padding-bottom: 8px;
+  margin-top:7px;
+  margin-bottom: 7px;
   background-color: #fff;  /*с цветом не могу разобраться*/
   border-radius: 7px;
   border: 1px solid #d3d3d2;
@@ -218,9 +233,9 @@ input[type="search"] {
 .search-popup .bb {
   z-index: 200;
   position: relative;
-  left: -308px;
-  top: 20px;
-  width: 340px;
+  left: -310px;
+  top: 18px;
+  width: 347px;
   padding-top: 20px;
   height: 100px;
   display: none;
@@ -231,15 +246,14 @@ input[type="search"] {
   display: inline-block;
   font-size: 14px;
   line-height: 16px;
-  padding: 10px 15px 10px 45px;
+  padding: 7px 15px 7px 41px;
   border-radius: 50px;
   background-color: rgba(255,255,255,0.2);
   color: #fff;
   text-decoration: none;
   background-image: url(/img/login.svg);
   background-repeat: no-repeat;
-  background-position:20% 50%;
-  margin-top: 12px;
+  background-position:21% 55%;
 }
 
 .login > a:hover {
@@ -250,6 +264,8 @@ input[type="search"] {
 }
 
 .login {
+  margin-top: 23px;
+  height: 32px;
   float: left;
   display: inline-block;
   width:90px;
@@ -257,26 +273,26 @@ input[type="search"] {
 }
 .bb2 form {
   position: absolute;
-  top:9px;
+  top:16px;
   z-index: 700;
   width: 277px;
-  height: 255px;
+  height: 214px;
   background-color: #f8f7f4;
-  border-radius: 7px;
+  border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0,0,0,0.4);
 }
 
   .bb2 input[type="email"],
   .bb2 input[type="password"] {
   font-size: 14px;
-  width: 205px;
+  width: 208px;
   line-height: 24px;
   margin-left: 19px;
-  margin-top: 20px;
-  padding-left: 14px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 15px;
+  margin-top: 19px;
+  padding-left: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 17px;
   border: 1px solid #d3d3d2;
   border-radius: 4px;
   color: #999;
@@ -289,15 +305,16 @@ input[type="search"] {
   font-size: 18px;
   line-height: 24px;
   color: #fff;
-  padding: 10px 27px;
+  padding: 9px 26px 11px 26px;
   border-radius: 30px;
   background-color: #ea573b;
   float: left;
-  margin-left: 20px;
+  margin-left: 17px;
+  margin-top: 4px;
 }
 
 input[type="password"]{
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .login:hover .bb2{
@@ -307,7 +324,7 @@ input[type="password"]{
 .login .bb2{
   z-index: 100;
   top:43px;
-  right: 150px;
+  right: 152px;
   position: absolute;
   width: 277px;
   height: 260px;
@@ -315,31 +332,36 @@ input[type="password"]{
 }
 
 form a{
+  display: inline-block;
   font-size: 13px;
   line-height: 24px;
+  font-weight: 400;
   display: inline-block;;
-  margin-left: 15px;
+  margin-left: 19px;
   color: #000;
 }
                     /*Конец оформления кнопки входа*/
                     /*Стилизация корзины*/
 .bascet{
+  height: 32px;
   float: left;
   display: inline-block;
-  margin-top: 12px;
-  padding: 0;
+  margin-top: 23px;
+  padding: 0px;
 }
 
 .bascet a{
   display: inline-block;
-  padding: 8px 30px 8px 42px;
+  padding: 8px 33px 8px 45px;
   color:#fff;
   background-color: rgba(255,255,255,0.2);
   text-decoration: none;
   background-image: url("/img/basket.svg");
   background-repeat: no-repeat;
-  background-position: 15% 50%;
+  background-position: 18% 55%;
   border-radius: 20px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .bascet form{
@@ -351,19 +373,19 @@ form a{
   position: relative;
   float: left;
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 21px;
   padding: 0;
 }
 
 .bascet-full a{
   display: inline-block;
-  padding: 10px 13px 10px 42px;
+  padding: 10px 16px 10px 44px;
   color:#000;
   background-color: #f7f6f3;
   text-decoration: none;
   background-image: url("/img/basket-full.png");
   background-repeat: no-repeat;
-  background-position: 15% 50%;
+  background-position: 17% 50%;
   border-radius: 50px;
   font-size: 14px;
   line-height: 16px;
@@ -373,8 +395,9 @@ form a{
 table{
   border-collapse: collapse;
   display: table;
-  margin: 0;
   padding: 0;
+  margin-left: 14px;
+  margin-top: 10px;
   font-size: 13px;
   line-height: 16px;
   color: #000;
@@ -383,10 +406,10 @@ table{
 .bascet-hover{
   position: absolute;
   right: 0;
-  width: 550px;
-  height: 250px;
-  display: none;
+  width: 555px;
+  height: 259px;
   top:30px;
+  display: none;
 }
 
 .bascet-hover img{
@@ -406,13 +429,17 @@ td:nth-child(1){
 }
 
 td:nth-child(3){
-  width: 216px;
+  width: 218px;
   padding-right: 21px;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-top: 12px;
 }
 
 td:nth-child(4),
 td:nth-child(5){
   padding-right: 13px;
+  padding-left: 12px;
 }
 
 tr{
@@ -423,10 +450,11 @@ table::after{
   content: "";
   width: 504px;
   height: 1px;
+  top: 129px;
   background-color: #cacac7;
 }
 
-button{
+.bascet-hover button{
   outline: none;
   border-style: none;
   background-color:transparent;
@@ -438,10 +466,11 @@ button{
 }
 
 caption{
-  margin-top: 15px;
-  margin-bottom: 18px;
+  margin-top: 30px;
+  margin-bottom: 14px;
   caption-side: bottom;
   text-align: right;
+  margin-right: -7px;
   font-size: 15px;
   line-height:18px;
   font-weight:bold;
@@ -452,12 +481,12 @@ caption span{
 }
 
 .bascet-full form{
-  top:10px;
+  top:9px;
+  right: 0;
   position: absolute;
   background-color: #f8f7f4;
   border-radius: 5px;
-  width: 505px;
-  padding:12px 20px;
+  width: 540px;
   box-shadow: 0 20px 20px rgba(0,0,0,0.4);
 }
 
@@ -466,11 +495,12 @@ caption span{
   font-size: 18px;
   line-height:24px;
   font-weight:bold;
-  margin: 0;
-  padding: 10px 12px;
+  margin-right: 14px;
+  padding: 8px 15px 13px 15px;
   border-radius: 50px;
   outline: 0;
   border-style: none;
+  margin-bottom: 20px;
 }
 
 .bascet-full form::after{
@@ -488,15 +518,14 @@ caption span{
   float:right;
   display: inline-block;
   width: 170px;
-  right:27px;
-  top: 55px;
+  margin-top: 3px;
 }
 
 .info p{
   color:#fff;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   text-align: right;
   font-weight: bold;
 }
@@ -515,26 +544,26 @@ caption span{
   text-align: center;
   color: #fff;
   margin-bottom: 40px;
-  margin-left: 27px;
+  margin-left: 26px;
   margin-right: 27px;
-  margin-top: 160px;
+  margin-top: 161px;
 }
 
 .slide-title{
   width: 700px;
   margin:-118px auto;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   font-size:60px;
   font-weight:900;
-  line-height: 60px;
+  line-height: 60.5px;
 }
 
 .slider-btn{
   display: inline-block;
-  padding: 12px 40px;
+  padding: 9px 41px 12px 40px;
   font-size: 32px;
   line-height: 44px;
-  font-weight: bold;
+  font-weight: 900;
   vertical-align: top;
   color: #fff;
   text-decoration: none;
@@ -563,8 +592,8 @@ caption span{
 
 .slider-controls{
   position: absolute;
-  top: 575px;
-  left:27px;
+  top: 564px;
+  left:29px;
   z-index: 20;
   font-size: 0;
 }
@@ -650,10 +679,10 @@ main {
 .action {
   display: inline-block;
   width:560px;
-  height: 229px;
+  height: 230px;
   border-radius: 20px;
   color: #fff;
-  margin-bottom: 40px;;
+  margin-bottom: 35px;;
   padding: 0;
   vertical-align: top;
 }
@@ -665,12 +694,11 @@ main {
   line-height: 24px;
   font-weight: bold;
   color: #fff;
-  padding: 15px 22px;
+  padding: 10px 23px 10px 22px;;
   border-radius: 50px;
   background-color: #ea573b;
-  margin-bottom: 23px;
   float: right;
-  margin-right: 21px;
+  margin-right: 22px;
   box-shadow: 0px 2px 2px rgba(172,16,0,0.54);
   background: #cb3926;
   background: -moz-linear-gradient(top, #f26843 0%, #cb3926 100%);
@@ -713,22 +741,26 @@ input[type="submit"]:active,
   font-size: 35px;
   line-height: 41px;
   max-width: 320px;
-  margin-left:20px;
-  margin-top: 23px;
+  margin-left:17px;
+  margin-top: 15px;
   font-weight: bold;
 }
 
 .action p{
+  margin-bottom: 45px;
   width: 520px;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
-  margin-left:20px;
+  margin-left: 19px;
+  margin-top: -13px;
 }
 
 .razz-left {
   background-image: url("/img/bg-crimson-baner.jpg");
   margin-right: 13px;
+  margin-left: -1px;
+  width: 560px;
 }
 
 .chocolate {
@@ -739,7 +771,7 @@ input[type="submit"]:active,
 
                     /*Стилизация блока с мороженым основная страница*/
 .ice-cream-bottom{
-  margin-bottom: 55px;
+  margin-bottom: 43px;
 }
 
 .ice-cream-gal {
@@ -755,12 +787,12 @@ input[type="submit"]:active,
   padding: 0;
   width: 267px;
   vertical-align: top;
-  margin-right: 26px;
+  margin-right: 25px;
   text-align: center;
   color: #fff;
   position: relative;
   line-height: 0px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .ice-cream:before {
@@ -782,10 +814,12 @@ input[type="submit"]:active,
 }
 
 .ice-cream a {
+  top: 11px;
   position: relative;
   z-index: 15;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 500;
 }
 
 
@@ -802,20 +836,17 @@ input[type="submit"]:active,
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
-  top:205px;
-  left: 0;
+  top:207px;
+  left: 1px;
 }
 
 .price-ice span {
   font-size: 30px;
+  line-height: 45px;
 }
                     /*Hover для блока с мороженым(бвстрый просмотр)*/
 .ice-cream:hover .hover-ice{
   display: block;
-}
-.ice-cream:hover .name {
-  position: relative;
-  z-index: 1120;
 }
 
 .hover-ice{
@@ -826,33 +857,38 @@ input[type="submit"]:active,
   top: -5px;;
   left: -5px;
   background-color: rgba(255,255,255,0.2);
-  display: none;
   border-radius: 5px;
+  display: none;
 }
 
 .fast-see{
-  position: absolute;
-  top: 340px;
+  margin-top:325px;
   display: inline-block;
+  width: 200px;
+  height: 36px;
+  padding-top: 9px;
   text-decoration: none;
   font-size: 18px;
   line-height: 24px;
-  padding: 12px 16px;
+  font-weight: bold;
   border-radius: 50px;
 }
                     /*Раздел "Преимущества"*/
 .better {
+  margin-top: 10px;
   background-image: url("/img/bg-better.png");
   border-radius: 15px;
-  padding: 21px;
+  padding-left: 21px;
+  padding-top: 7px;
+  padding-bottom: 8px;
   margin-bottom: 40px;
 }
 
 .better h1 {
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
-  margin-bottom: 0px;
+  font-weight:100;
+  margin-bottom: -5px;
 }
 
 .better p {
@@ -871,32 +907,39 @@ input[type="submit"]:active,
 }
 
 .plus-1 {
+  margin-top: 12px;
   background-image: url("/img/ice-better.svg");
   background-repeat: no-repeat;
+  background-position: 0% 12%;
   padding-top:15px;
+  margin-bottom: -12px;
 }
 
 .plus-2 {
   background-image: url(/img/better-sheet.svg);
+  background-position: 0% 12%;
   background-repeat: no-repeat;
-  padding-top: 15px;
+  padding-top: 18px;
 }
 
 .better .right {
   float:right;
   width: 538px;
+  margin-right: 20px;
 }
 
 .plus-3 {
   background-image: url("/img/better-cow.svg");
   background-repeat: no-repeat;
-  padding-top: 15px;
+  padding-top:11px;
+  margin-bottom: -9px;
 }
 
 .plus-4 {
   background-image: url("/img/better-thermo.svg");
   background-repeat: no-repeat;
-  padding-top: 15px;
+  padding-top: 16px;
+  background-position: 0% 5%;
 }
 
 .better::after {
@@ -915,14 +958,17 @@ input[type="submit"]:active,
   border-radius: 20px;
   margin-bottom: 40px;
   vertical-align: top;
-  margin-right: 20px;
+  margin-right: 22px;
 }
 
 .new-blog h3 {
   color: #000;
-  margin-left: 20px;
+  margin-left: 19px;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 600;
+  padding-top: 6px;
+  margin-bottom: 4px;
 }
 
 .new-blog a {
@@ -931,14 +977,15 @@ input[type="submit"]:active,
   line-height: 30px;
   font-weight: bold;
   display: inline-block;
-  width: 300px;
-  margin-left: 20px;
+  width: 299px;
+  margin-left: 18px;
 }
 
 .subscribe {
   position: relative;
   background-image: url("/img/subscribe-bg.png");
   background-color: #fff;
+  background-position: 1% 10%;
   display: inline-block;
   height: 220px;
   width: 560px;
@@ -963,13 +1010,13 @@ input[type="submit"]:active,
   color: #5a5a5a;
   padding: 0;
   margin: 0;
-  margin-top: 30px;
-  padding-left: 20px;
+  margin-top: 28px;
+  padding-left: 22px;
   padding-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
-input[type="email"] {
+.subscribe input[type="email"] {
   color: #999;
   width: 346px;
   margin: 0;
@@ -980,9 +1027,9 @@ input[type="email"] {
   background-color: #fff;
   font-size: 16px;
   line-height: 24px;
-  margin-left: 20px;
-  padding: 15px 10px;
-  margin-right: 10px;
+  margin-left: 22px;
+  padding: 9px 7px 9px 13px;
+  margin-right: 8px;
   outline: none;
 }
 
@@ -992,7 +1039,7 @@ input[type="submit"] {
   line-height: 24px;
   font-weight:bold;
   color: #fff;
-  padding: 10px 15px;
+  padding: 10px 20px 10px 18px;
   border-radius: 50px;
   outline: none;
 }
@@ -1008,7 +1055,8 @@ input[type="submit"] {
 .yandex{
   width: 100%;
   position: absolute;
-  top:1921px;
+  top:1884px;
+  height: 429px;
 }
 
 .central-container {
@@ -1025,25 +1073,28 @@ input[type="submit"] {
   background-color: #fff;
   border-radius: 15px;
   padding-left: 25px;
-  padding-top: 33px;
+  padding-top: 28px;
 }
 
 .map-info a {
   display: block;
   width: 175px;
-  padding: 2px;
+  padding-top: 4px;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
   text-decoration: none;
   color: #000;
-
+  margin-bottom: 3px;
 }
 
 .map-info span {
+  display: block;
+  width:177px;
   font-size: 14px;
   line-height: 20px;
   color: #323232;
+  margin-bottom: 1px;
 }
 
 .map-info address {
@@ -1061,8 +1112,8 @@ input[type="submit"] {
   border-style: none;
   color: #fff;
   background-color: #e94f38;
-  margin-top: 18px;
-  padding: 13px 28px;
+  margin-top: 25px;
+  padding: 10px 30px 14px;
   font-size: 18px;
   outline: none;
 }
@@ -1078,6 +1129,7 @@ input[type="submit"] {
 .footer-catalog{
   border-top: 1px solid rgba(255,255,255,0.3);
   margin-top: 60px;
+  padding-top: 17px;
 }
 
 .gl-footer::after {
@@ -1088,7 +1140,8 @@ input[type="submit"] {
 
 .social-icon {
   float:left;
-  margin-top: 35px;
+  margin-top: 18px;
+  padding-left: 3px;
 }
 
 .social-icon:first-child {
@@ -1163,9 +1216,9 @@ input[type="submit"] {
   display: inline-block;
   float: left;
   vertical-align: top;
-  margin-top: 35px;
-  margin-left:213px;
-  margin-right: 230px;
+  margin-top: 11px;
+  margin-left:216px;
+  margin-right: 227px;
   margin-bottom: 35px;
 }
 
@@ -1178,8 +1231,8 @@ input[type="submit"] {
 
 .mat-left {
   float: left;
-  margin-right:32px;
-  padding-left: 15px;
+  margin-right:27px;
+  padding-left: 20px;
   background-image: url("/img/love.svg");
   background-repeat: no-repeat;
   background-position: 1px 6px;
@@ -1187,6 +1240,7 @@ input[type="submit"] {
 
 .mat-left .love {
   font-weight: bold;
+  margin-bottom: -1px;
 }
 
 .mat-right {
@@ -1196,12 +1250,11 @@ input[type="submit"] {
 .logo-academy {
   float: right;
   width: 190px;
-  margin-top: 20px;
   color:#fff;
 }
 
 .logo-academy img {
-  margin-bottom: -15px;
+  margin-bottom: -14px;
 }
 
 .logo-academy p{
@@ -1224,7 +1277,9 @@ input[type="submit"] {
 }
                     /*Стилизуем хлебную крошку*/
 .inner-page {
-  margin-bottom: 30px;
+  display: inline-block;
+  margin-top: -25px;
+  margin-bottom: 20px;
 }
 
 .breadcrums {
@@ -1236,7 +1291,9 @@ input[type="submit"] {
 .breadcrums li{
   position:relative;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 17px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .breadcrums a,
@@ -1262,7 +1319,7 @@ input[type="submit"] {
   content: "»";
   position: absolute;
   color: #fff;
-  right: -18px;
+  right: -15px;
 }
 
 .breadcrums .current::after {
@@ -1271,7 +1328,7 @@ input[type="submit"] {
 .inner-page h1 {
   display: inline-block;
   margin: 0;
-  padding: 0;
+  padding-top: 1px;
   font-size: 35px;
   line-height: 41px;
   font-weight:bold;
@@ -1292,64 +1349,163 @@ input[type="submit"] {
   line-height: 16px;
   font-weight: 500;
   padding-left: 15px;
-  margin-bottom: 5px;
 }
 .sorting {
   width: 198px;
-  margin-right: 15px;
+  margin-right: 6px;
+  padding-top: 4px;
 }
 
 .select-top {
-  width: 200px;
+  margin-top: 4px;
+  width: 192px;
   height: 36px;
   background-color: rgba(255,255,255, 0.2);
   border-radius: 50px;
   background-image: url("/img/select-arrow.svg");
   background-repeat: no-repeat;
-  background-position: 165px 15px;
+  background-position: 171px 16px;
   overflow: hidden;
 }
 
 .select-top select {
+  margin-left: 10px;
   width:211px;
   height:36px;
-  border: 0;
+  border-style: none;
   background:transparent;
   color:#fff;
   font-size: 16px;
   line-height: 18px;
-  outline: 0;
+  outline: none;
   cursor: pointer;
 }
                     /*Стилизуем фильт цены*/
-.filer-price {
-  width: 220px;
-  margin-right: 15px;
-  background-color: #cb3926;
+.filer-price{
+  padding-top: 5px;
+  width:220px;
+  color: #fff;
+}
+
+.price-controls label{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.price-controls{
+  position:relative;
+  font-size: 0;
+  margin-left: 15px;
+  margin-bottom: 2px;
+  padding-top: 2px;
+}
+
+.price-controls::after{
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 49%;
+  width: 7px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.price-controls .min-price{
+  width: 98px;
+  margin-right: 9px;
+}
+
+.price-controls .max-price{
+  width: 60px;
+}
+
+.price-controls input{
+  width: 26px;
+  margin: 0;
+  background: none;
+  border:none;
+  font: inherit;
+  color: inherit;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 0 1px;
+}
+
+.range-controls {
+  position: relative;
+  height: 36px;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 50px;
+}
+
+.range-controls .scale{
+  position: absolute;
+  top: 15px;
+  left:15px;
+  width: 188px;
+  height: 4px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.range-controls .bar{
+  height: 4px;
+  width: 98px;
+  background-color: #f8f7f4;
+  margin-left: 29px;
+}
+
+.range-toggle{
+  position: absolute;
+  top: 8px;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  border: 9px solid #f8f7f4;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle-min{
+  left:35px;
+}
+
+.range-toggle-max{
+  right: 67px;
 }
 
 
                     /*Стилизуем жирность*/
 .fat-content {
   width: 415px;
+  padding-top: 3px;
+  padding-left: 10px;
 }
 
 .fat-scale {
-  padding-top: 8px;
+  margin-top: 4px;
+  padding-top: 7px;
   padding-bottom: 8px;
-  padding-left: 16px;
+  padding-left: 21px;
   border-radius: 50px;
   background-color: rgba(255,255,255,0.2);
 }
 
-.filter label {
+.fat-scale label,
+.fillers-list label{
   display: inline-block;
   cursor: pointer;
   font-size: 16px;
   line-height: 15px;
-  margin-left: 24px;
-  margin-right: 19px;
+  margin-left: 25px;
+  margin-right: 20px;
   position: relative;
+}
+
+.fat-scale label:last-child,
+.fillers-list label:last-child{
+  margin-right: 0;
 }
 
 .fat-scale input[type="radio"]{
@@ -1376,14 +1532,15 @@ input[type="radio"]:checked + label:before{
                     /*Стилизуем наполнители на выбор*/
 .fillers {
   width: 702px;
-  margin-right: 15px;
-  margin-top:18px;
+  margin-right: 11px;
+  margin-top:11px;
 }
 
 .fillers-list{
+  margin-top: 3px;
   border-radius: 50px;
   background-color: rgba(255,255,255,0.2);
-  padding: 10px;
+  padding: 7px;
 }
 
 .fillers-list input[type="checkbox"]{
@@ -1398,6 +1555,7 @@ input[type="checkbox"]:checked + label:before{
 }
                     /*Кнопка отправки сортировки*/
 .apply {
+  margin-top: 36px;
   width: 145px;
 }
 .apply input[type="submit"]{
@@ -1405,13 +1563,13 @@ input[type="checkbox"]:checked + label:before{
   padding: 0;
   font-size: 16px;
   line-height: 18px;
-  padding: 9px 28px;
+  padding: 8px 27px;
   font-weight: normal;
   background:transparent;
   border: 2px solid #fff;
   outline: none;
   box-shadow: none;
-  margin-top: 45px;
+
   background-color: rgba(255,255,255,0.2);
 }
 
@@ -1424,32 +1582,48 @@ input[type="checkbox"]:checked + label:before{
 
                     /*Стилизуем пагинацию*/
 .pagination {
+  padding-top: 3px;
   float: right;
   vertical-align: top;
+  margin-right: 31px;
 }
 
 .pagination::after{
   content: "";
-  display: table;
-  clear: both;
+  background-image: url(/img/arrow-right.png);
+  width: 8px;
+  height: 14px;
+  display:inline-block;
+}
+
+.pagination::before{
+  content: "";
+  background-image: url(/img/arrow-right.png);
+  width: 8px;
+  height: 14px;
+  display:inline-block;
+  transform: rotate(180deg);
 }
 
 .pagination .active{
   background-color: #fff;
   color: #000;
+  margin-left: 15px;
 }
 
 .pagination a {
   display: inline-block;
-  width: 27px;
-  height: 27px;
+  width: 25px;
+  height: 25px;
   text-align: center;
   text-decoration: none;
   color: #fff;
   border-radius: 50%;
   vertical-align:baseline;
-  padding-top: 3px;
-  padding-right: 2px;
+}
+
+.pagination a:last-child{
+  margin-right: 10px;
 }
 
 .pagination a:hover {
@@ -1461,6 +1635,94 @@ input[type="checkbox"]:checked + label:before{
   color: rgba(255,255,255,0.3);
 }
 
-.pagination span {
-  color:#fff;
+
+
+
+                    /*Модальное окно*/
+
+
+.modal-feedback{
+  z-index: 3000;
+  top:330px;
+  left: 35px;
+  display: block;
+  position: absolute;
+  width:453px;
+  padding: 0;
+  margin-left: 363px;
+  background-color: #f8f7f4;
+  padding-top: 4px;
+  padding-left: 24px;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.35);
+  display: none;
+}
+
+.close-modal{
+  display: inline-block;
+  float: right;
+  width: 22px;
+  height: 22px;
+  background-image: url("/img/delete-modal.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-style: none;
+  margin-right: 16px;
+  margin-top: -55px;
+}
+
+.modal-feedback-show {
+  display: block;
+}
+
+
+.modal-feedback h2{
+  display: block;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.modal-feedback input[type="text"],
+.modal-feedback input[type="email"] {
+  width: 235px;
+  height: 10px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  background-color: #fff;
+  border: 1px solid rgba(178,178,178,0.52);
+  padding: 15px 14px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+textarea{
+  display: inline-block;
+  padding: 0;
+  padding-left: 13px;
+  padding-top: 13PX;
+  margin: 0;
+  margin-bottom: 25px;
+  border: 1px solid rgba(178,178,178,0.52);
+  color: #999999;
+  width: 413px;
+  height: 141px;
+  resize: none;
+  border-radius: 5px;
+}
+
+.modal-feedback::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.modal-feedback input[type="submit"]{
+  float: right;
+  margin-right: 25px;
+  padding: 14px 25px;
+  margin-bottom: 25px;
 }
