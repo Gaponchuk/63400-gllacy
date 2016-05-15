@@ -875,7 +875,6 @@ input[type="submit"]:active,
 }
                     /*Раздел "Преимущества"*/
 .better {
-  margin-top: 10px;
   background-image: url("/img/bg-better.png");
   border-radius: 15px;
   padding-left: 21px;
@@ -1042,6 +1041,7 @@ input[type="submit"] {
   padding: 10px 20px 10px 18px;
   border-radius: 50px;
   outline: none;
+  cursor: pointer;
 }
                     /*Раздел "Карта"*/
 .map {
@@ -1105,17 +1105,21 @@ input[type="submit"] {
   margin-bottom: 18px;
 }
 
-.feedback {
-  text-align: center;
-  display:block;
+.map-info .feedback {
+  display: block;
+  width: 226px;
   border-radius: 50px;
   border-style: none;
   color: #fff;
   background-color: #e94f38;
   margin-top: 25px;
-  padding: 10px 30px 14px;
+  padding-left: 26px;
+  padding-top: 10px;
+  padding-bottom: 11px;
   font-size: 18px;
+  line-height: 24px;
   outline: none;
+  cursor: pointer;
 }
                     /*Футер*/
 .gl-footer {
@@ -1642,20 +1646,23 @@ input[type="checkbox"]:checked + label:before{
 
 
 .modal-feedback{
-  z-index: 3000;
-  top:330px;
-  left: 35px;
+  z-index: 2200;
+  top:337px;
+  left: 363px;
   display: block;
-  position: absolute;
+  position: fixed;
   width:453px;
   padding: 0;
-  margin-left: 363px;
   background-color: #f8f7f4;
   padding-top: 4px;
   padding-left: 24px;
   border-radius: 10px;
   box-shadow: 0 3px 7px rgba(0,0,0,0.35);
   display: none;
+}
+
+.modal-feedback-show{
+  display: block;
 }
 
 .close-modal{
@@ -1670,6 +1677,8 @@ input[type="checkbox"]:checked + label:before{
   border-style: none;
   margin-right: 16px;
   margin-top: -55px;
+  outline: none;
+  cursor: pointer;
 }
 
 .modal-feedback-show {
