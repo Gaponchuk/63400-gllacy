@@ -1,4 +1,4 @@
-body{
+body {
   font-family: "Roboto", "Arial", sans-sertif;/*семейство шрифтов*/
   font-size: 16px;/*размер шрифта*/
   line-height: 22px; /*высота строки*/
@@ -19,7 +19,7 @@ body > input[type="radio"] {
 
 .bg-all {
   min-width: 940px;
-  background-color:#849d8f;
+  background-color: #849d8f;
   background-image: url(../img/ice-cream-green.png);
   background-repeat: no-repeat;
   background-position: 50% 4.4%;
@@ -42,7 +42,7 @@ body > input[type="radio"] {
   margin-top: 21px;
   padding: 0;
   display: inline-block;
-  vertical-align:top;
+  vertical-align: top;
   list-style: none;
 }
 
@@ -61,10 +61,10 @@ body > input[type="radio"] {
   font-weight: 700;
 }
 
-.menu a::after{
+.menu a::after {
   content: "";
   height: 1px;
-  width:100%;
+  width: 100%;
   display: block;
   background-color: rgba(255,255,255,0.3);
 }
@@ -74,18 +74,18 @@ body > input[type="radio"] {
   text-decoration: none;
 }
 
-.menu li:hover{
+.menu li:hover {
   background-color: #fff;
   color: #000;
   border-radius: 50px;
 }
 
-.menu .background:hover{
+.menu .background:hover {
   background-color: #d07058;
   color: #fff;
 }
 
-.menu .background:active{
+.menu .background:active {
   background-color: #ededed;
   color: #333333;
   box-shadow: inset 0px 2px 1px #696969;
@@ -103,8 +103,8 @@ body > input[type="radio"] {
 
 .ch a {
   text-align: left;
-  color:#000;
-  display:block;
+  color: #000;
+  display: block;
   text-decoration: none;
   text-align: left;
   padding: 0;
@@ -123,7 +123,7 @@ body > input[type="radio"] {
   position: absolute;
   z-index: 30;
   margin: 0;
-  padding:0px;
+  padding: 0px;
   text-align: center;
   /*color: #000;*/
   border-radius: 5px;
@@ -150,17 +150,17 @@ li:hover .ch {
   content: "";
   position:absolute;
   width: 130px;
-  height:1px;
-  left:6px;
+  height: 1px;
+  left: 6px;
   bottom: 0;
   background-color: #d1d0ce;
 }
 
-.border a{
-  font-weight:bold;
+.border a {
+  font-weight: bold;
 }
 
-.active{
+.active {
   background-color: #d07058;
 }
 
@@ -168,24 +168,24 @@ li:hover .ch {
   background-color: #fbded8;
 }
 
-.catalog-hover a:active{
+.catalog-hover a:active {
   background-color: #f6b5a5;
 }
 
-.active-catalog{
-  padding: 15px 18px 13px 20px;
+.active-catalog {
+  padding: 11px 20px 13px 13px;
   background-color: #d07058;
   color: #fff;
   border-radius: 50px;
   font-size: 14px;
   line-height: 6px;
-  font-weight:bold;
-  margin-left: 2px;
-  margin-right: 2px;
+  font-weight: bold;
+  margin-left: 4px;
   cursor: pointer;
+  margin-top: 3px;
 }
 
-.menu .background:active{
+.menu .background:active {
   background-color: #ededed;
   color: #333333;
 }
@@ -215,26 +215,26 @@ li:hover .ch {
   position: absolute;
   z-index: 100;
   width: 310px;
-  padding:14px 17px;
+  padding: 14px 17px;
   background-color: #f8f7f4;
   border-radius: 8px;
   box-shadow: 0 20px 20px rgba(0,0,0,0.4);
-  display: non;
+  display: none;
 }
 
 input[type="text"] {
-  width: 290px;
+  width: 310px;
   height: 44px;
-  font-size:14px;
+  font-size: 14px;
   line-height: 24px;
-  padding:0;
-  margin:0;
-  padding-left:10px;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
   padding-right: 7px;
-  padding-top:8px;
+  padding-top: 8px;
   padding-bottom: 8px;
-  margin-top:7px;
-  margin-bottom: 7px;
+  margin-top: 7px;
+  margin-bottom: 5px;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #d3d3d2;
@@ -269,7 +269,7 @@ input[type="text"] {
 
 .magic-search > label {
   position: absolute;
-  top:17px;
+  top: 17px;
   left: 15px;
   font-size: 14px;
   color: #999999;
@@ -280,7 +280,7 @@ input[type="text"] {
  border: 2px solid #c7c6c5 ;
 }
 
-input:focus + label{
+.magic-search input:focus + label {
   top: -10px;
   left: 5px;
   color: #8fbdec;
@@ -288,11 +288,11 @@ input:focus + label{
   line-height: 13px;
 }
 
-.magic-search input:focus{
+.magic-search input:focus {
   outline: 2px solid #8fbdec;
 }
 
-input:valid + label {
+.magic-search input:valid + label {
  color: #999;
 }
 
@@ -309,7 +309,7 @@ input:valid + label {
   text-decoration: none;
   background-image: url(../img/login.svg);
   background-repeat: no-repeat;
-  background-position:21% 55%;
+  background-position: 21% 55%;
 }
 
 .login > a:hover {
@@ -324,12 +324,12 @@ input:valid + label {
   height: 32px;
   float: left;
   display: inline-block;
-  width:90px;
+  width: 90px;
   margin-right: 9px;
 }
 .bb2 form {
   position: absolute;
-  top:16px;
+  top: 17px;
   z-index: 700;
   width: 277px;
   height: 214px;
@@ -341,7 +341,7 @@ input:valid + label {
   .bb2 input[type="email"],
   .bb2 input[type="password"] {
   font-size: 14px;
-  width: 208px;
+  width: 239px;
   height: 44px;
   line-height: 24px;
   margin-left: 19px;
@@ -357,7 +357,7 @@ input:valid + label {
   box-sizing: border-box;
 }
 
-.bb2 input[type="submit"]{
+.bb2 input[type="submit"] {
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
@@ -371,17 +371,17 @@ input:valid + label {
   margin-top: 4px;
 }
 
-input[type="password"]{
-  margin-bottom: 15px;
+.bb2 input[type="password"] {
+  margin-bottom: 20px;
 }
 
-.login:hover .bb2{
-  display:block;
+.login:hover .bb2 {
+  display: block;
 }
 
-.login .bb2{
+.login .bb2 {
   z-index: 100;
-  top:43px;
+  top: 43px;
   right: 152px;
   position: absolute;
   width: 277px;
@@ -389,7 +389,7 @@ input[type="password"]{
   display: none;
 }
 
-form a{
+form .log {
   display: inline-block;
   font-size: 13px;
   line-height: 24px;
@@ -401,7 +401,7 @@ form a{
 
                     /*Стилизуем поля ввода для формы ВХОД*/
 .user-pass,
-.user-email{
+.user-email {
   position: relative;
 }
 
@@ -410,18 +410,18 @@ form a{
   position: absolute;
   width: 150px;
   color: #999999;
-  top: 23px;
-  left: 29px;
+  top: 31px;
+  left: 31px;
   transition: 0.5s;
 }
 
 .user-pass:hover input,
-.user-email:hover input{
+.user-email:hover input {
   border: 2px solid #c7c6c5;
 }
 
 .user-pass input:focus + label,
-.user-email input:focus + label{
+.user-email input:focus + label {
   top: 2px;
   left: 22px;
   color: #8fbdec;
@@ -433,7 +433,7 @@ form a{
 }
                     /*Конец оформления кнопки входа*/
                     /*Стилизация корзины*/
-.bascet{
+.bascet {
   height: 32px;
   float: left;
   display: inline-block;
@@ -441,10 +441,10 @@ form a{
   padding: 0px;
 }
 
-.bascet a{
+.bascet a {
   display: inline-block;
   padding: 8px 33px 8px 45px;
-  color:#fff;
+  color: #fff;
   background-color: rgba(255,255,255,0.2);
   text-decoration: none;
   background-image: url("../img/basket.svg");
@@ -455,12 +455,12 @@ form a{
   line-height: 16px;
 }
 
-.bascet form{
+.bascet form {
   display: none;
 
 }
                     /*Полная корзина*/
-.bascet-full{
+.bascet-full {
   position: relative;
   float: left;
   display: inline-block;
@@ -468,10 +468,10 @@ form a{
   padding: 0;
 }
 
-.bascet-full a{
+.bascet-full .basket {
   display: inline-block;
   padding: 10px 16px 10px 44px;
-  color:#000;
+  color: #000;
   background-color: #f7f6f3;
   text-decoration: none;
   background-image: url("../img/basket-full.png");
@@ -483,7 +483,7 @@ form a{
   font-weight: 500;
 }
 
-table{
+table {
   border-collapse: collapse;
   display: table;
   padding: 0;
@@ -494,32 +494,33 @@ table{
   color: #000;
 }
 
-.bascet-hover{
+.bascet-hover {
   position: absolute;
+  z-index: 20;
   right: 0;
   width: 555px;
   height: 259px;
-  top:30px;
+  top: 30px;
   display: none;
 }
 
-.bascet-hover img{
+.bascet-hover img {
   border-radius: 50%;
 }
 
-.bascet-hover span{
+.bascet-hover span {
   color: #999999;
 }
 
-td{
+td {
   padding: 8px;
 }
 
-td:nth-child(1){
+td:nth-child(1) {
   padding-left: 0px;
 }
 
-td:nth-child(3){
+td:nth-child(3) {
   width: 218px;
   padding-right: 21px;
   padding-left: 0;
@@ -528,15 +529,15 @@ td:nth-child(3){
 }
 
 td:nth-child(4),
-td:nth-child(5){
+td:nth-child(5) {
   padding-right: 13px;
   padding-left: 12px;
 }
 
-tr{
+tr {
   position: relative;
 }
-table::after{
+table::after {
   position: absolute;
   content: "";
   width: 504px;
@@ -545,7 +546,8 @@ table::after{
   background-color: #cacac7;
 }
 
-.bascet-hover button{
+.bascet-hover .close {
+  display: inline-block;
   outline: none;
   border-style: none;
   background-color:transparent;
@@ -554,25 +556,26 @@ table::after{
   background-image: url("../img/delete.svg");
   background-repeat: no-repeat;
   background-position: center;
+  text-indent: 100%;
+  overflow: hidden;
 }
 
-caption{
+caption {
   margin-top: 30px;
   margin-bottom: 14px;
   caption-side: bottom;
   text-align: right;
-  margin-right: -7px;
   font-size: 15px;
-  line-height:18px;
-  font-weight:bold;
+  line-height: 18px;
+  font-weight: bold;
 }
 
-caption span{
+caption span {
   color: #6b6b6a;
 }
 
-.bascet-full form{
-  top:9px;
+.bascet-full form {
+  top: 9px;
   right: 0;
   position: absolute;
   background-color: #f8f7f4;
@@ -581,11 +584,11 @@ caption span{
   box-shadow: 0 20px 20px rgba(0,0,0,0.4);
 }
 
-.bascet-hover input[type="submit"]{
+.bascet-hover input[type="submit"] {
   float: right;
   font-size: 18px;
-  line-height:24px;
-  font-weight:bold;
+  line-height: 24px;
+  font-weight: bold;
   margin-right: 14px;
   padding: 8px 15px 13px 15px;
   border-radius: 50px;
@@ -594,25 +597,25 @@ caption span{
   margin-bottom: 20px;
 }
 
-.bascet-full form::after{
+.bascet-full form::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.bascet-full:hover .bascet-hover{
+.bascet-full:hover .bascet-hover {
   display: block;
 }
                     /*Конец стилизации корзины*/
                     /*Время работы в шапке*/
-.info{
-  float:right;
+.info {
+  float: right;
   display: inline-block;
   width: 170px;
   margin-top: 3px;
 }
 
-.info p{
+.info p {
   color:#fff;
   font-size: 14px;
   line-height: 16px;
@@ -620,7 +623,7 @@ caption span{
   text-align: right;
   font-weight: bold;
 }
-.info a{
+.info a {
   font-weight: bold;
   color: #fff;
   font-size: 22px;
@@ -629,7 +632,7 @@ caption span{
 }
 
                     /*Начало слайдера*/
-.slader{
+.slader {
   position: relative;
   padding-top: 230px;
   text-align: center;
@@ -640,16 +643,16 @@ caption span{
   margin-top: 161px;
 }
 
-.slide-title{
+.slide-title {
   width: 700px;
   margin:-118px auto;
   margin-bottom: 31px;
-  font-size:60px;
-  font-weight:900;
+  font-size: 60px;
+  font-weight: 900;
   line-height: 60.5px;
 }
 
-.slider-btn{
+.slider-btn {
   display: inline-block;
   padding: 9px 41px 12px 40px;
   font-size: 32px;
@@ -667,46 +670,46 @@ caption span{
   border-radius: 50px;
 }
 
-.slider-btn:hover{
+.slider-btn:hover {
   background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0px 2px 2px rgba(172,16,0,1);
 }
 
-.slider-btn:active{
+.slider-btn:active {
   background: -moz-linear-gradient:(top, #d84833 0%, #e1613e 100%);
   background: -webkit-linear-gradient:(top, #d84833 0%, #e1613e 100%);
   background: linear-gradient:(to bottom, #d84833 0%, #e1613e 100%);
   box-shadow: inset 0px 2px 2px rgba(176,16,0,1);
 }
 
-.slider-controls{
+.slider-controls {
   position: absolute;
   top: 564px;
-  left:29px;
+  left: 29px;
   z-index: 20;
   font-size: 0;
 }
 
-.slider-controls label{
+.slider-controls label {
   display: inline-block;
   vertical-align: top;
   width: 17px;
   height: 17px;
   margin-right: 8px;
   background-color: transparent;
-  border:1px solid #fff;
-  border-radius:50%;
+  border: 1px solid #fff;
+  border-radius: 50%;
   cursor: pointer;
 }
 
-.slider-controls label:hover{
-  border:1px solid white;
+.slider-controls label:hover {
+  border: 1px solid white;
   background-color: rgba(248,247,244,0.4);
 }
 
-.slide{
+.slide {
   display: none;
 }
 
@@ -719,7 +722,7 @@ caption span{
 #img-1:checked ~ .bg-all label[for="img-1"],
 #img-2:checked ~ .bg-all label[for="img-2"],
 #img-3:checked ~ .bg-all label[for="img-3"] {
-  background-color:#fff;
+  background-color: #fff;
 }
 
 #img-1:checked ~ .bg-all {
@@ -728,7 +731,7 @@ caption span{
 }
 
 #img-2:checked ~ .bg-all {
-  background-color:#8996a6;
+  background-color: #8996a6;
   background-image: url(../img/ice-cream-blue.png);
 }
 
@@ -740,7 +743,7 @@ caption span{
 .bg-all:before,
 .bg-all:after {
   content: "";
-  visibility:hidden;
+  visibility: hidden;
 }
 
 .bg-all:before {
@@ -755,7 +758,7 @@ header {
   margin-left: 27px;
   margin-right: 27px;
 }
-header::after{
+header::after {
   content: "";
   display: table;
   clear: both;
@@ -769,8 +772,8 @@ main {
 
 .action {
   display: inline-block;
-  width:560px;
-  height: 230px;
+  width: 560px;
+  min-height: 230px;
   border-radius: 20px;
   color: #fff;
   margin-bottom: 35px;;
@@ -821,7 +824,7 @@ input[type="submit"]:hover,
 .action a:active,
 input[type="submit"]:active,
 .feedback:active,
-.fast-see:active{
+.fast-see:active {
   background: -moz-linear-gradient(top, #d74632 0%, #e1613e 100%;);
   background: -webkit-linear-gradient(top, #d74632 0%, #e1613e 100%;);
   background: linear-gradient(to bottom, #d74632 0%, #e1613e 100%;);
@@ -831,13 +834,12 @@ input[type="submit"]:active,
 .action h2{
   font-size: 35px;
   line-height: 41px;
-  max-width: 320px;
-  margin-left:17px;
+  margin-left: 17px;
   margin-top: 15px;
   font-weight: bold;
 }
 
-.action p{
+.action p {
   margin-bottom: 45px;
   width: 520px;
   font-size: 18px;
@@ -849,6 +851,7 @@ input[type="submit"]:active,
 
 .razz-left {
   background-image: url("../img/bg-crimson-baner.jpg");
+  background-color: #af1944;
   margin-right: 13px;
   margin-left: -1px;
   width: 560px;
@@ -856,12 +859,13 @@ input[type="submit"]:active,
 
 .chocolate {
   background-image: url("../img/bg-chocolate-baner.jpg");
+  background-color: #623013;
   float: right;
   margin-left: 13px;
 }
 
                     /*Стилизация блока с мороженым основная страница*/
-.ice-cream-bottom{
+.ice-cream-bottom {
   margin-bottom: 43px;
 }
 
@@ -896,7 +900,7 @@ input[type="submit"]:active,
   background: url(../img/hit.png);
 }
 
-.no-hit:before{
+.no-hit:before {
   display: none;
 }
 
@@ -906,9 +910,9 @@ input[type="submit"]:active,
 }
 
 .ice-cream a {
-  top: 11px;
+  top: 12px;
   position: relative;
-  z-index: 15;
+  z-index: 1500;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -941,7 +945,7 @@ input[type="submit"]:active,
   display: block;
 }
 
-.hover-ice{
+.hover-ice {
   z-index: 222;
   width: 278px;
   height: 405px;
@@ -953,8 +957,8 @@ input[type="submit"]:active,
   display: none;
 }
 
-.fast-see{
-  margin-top:325px;
+.fast-see {
+  margin-top: 325px;
   display: inline-block;
   width: 200px;
   height: 36px;
@@ -968,18 +972,21 @@ input[type="submit"]:active,
                     /*Раздел "Преимущества"*/
 .better {
   background-image: url("../img/bg-better.png");
+  background-color: #e9dcbf;
   border-radius: 15px;
   padding-left: 21px;
   padding-top: 7px;
   padding-bottom: 8px;
   margin-bottom: 40px;
   margin-top: -42px;
+  max-height: 500px;
+  overflow: hidden;
 }
 
 .better h1 {
   font-size: 24px;
   line-height: 30px;
-  font-weight:100;
+  font-weight: 100;
   margin-bottom: -5px;
 }
 
@@ -1003,7 +1010,7 @@ input[type="submit"]:active,
   background-image: url("../img/ice-better.svg");
   background-repeat: no-repeat;
   background-position: 0% 12%;
-  padding-top:15px;
+  padding-top: 15px;
   margin-bottom: -12px;
 }
 
@@ -1015,7 +1022,7 @@ input[type="submit"]:active,
 }
 
 .better .right {
-  float:right;
+  float: right;
   width: 538px;
   margin-right: 20px;
 }
@@ -1023,7 +1030,7 @@ input[type="submit"]:active,
 .plus-3 {
   background-image: url("../img/better-cow.svg");
   background-repeat: no-repeat;
-  padding-top:11px;
+  padding-top: 11px;
   margin-bottom: -9px;
 }
 
@@ -1043,6 +1050,7 @@ input[type="submit"]:active,
 .new-blog {
   display: inline-block;
   background-image: url("../img/new-in-blog.jpg");
+  background-color: #fff;
   height: 220px;
   width: 560px;
   margin: 0;
@@ -1092,8 +1100,8 @@ input[type="submit"]:active,
 
 .sub-bg {
   position: absolute;
-  top:5px;
-  left:5px;
+  top: 5px;
+  left: 5px;
   width: 549px;
   height: 210px;
   background-color: #f8f7f4;
@@ -1144,13 +1152,13 @@ input[type="submit"] {
 }
 
                     /*СТИЛИЗУЕМ форму подписки*/
-.sub-news{
+.sub-news {
   display: inline-block;
   position: relative;
   margin-right: 0px;
 }
 
-.sub-news > label{
+.sub-news > label {
   position: absolute;
   width: 150px;
   color: #999999;
@@ -1159,11 +1167,11 @@ input[type="submit"] {
   transition: 0.5s;
 }
 
-.sub-news:hover input{
+.sub-news:hover input {
   border: 2px solid #c7c6c5;
 }
 
-input:focus + label{
+input:focus + label {
   top: -18px;
   left: 22px;
   color: #8fbdec;
@@ -1188,10 +1196,10 @@ input:focus + label{
   position: relative;
 }
 
-.yandex{
+.yandex {
   width: 100%;
   position: absolute;
-  top:1884px;
+  top: 1884px;
   height: 429px;
 }
 
@@ -1199,7 +1207,7 @@ input:focus + label{
   position: relative;
 }
 
-.map-info{
+.map-info {
   z-index: 5;
   position: absolute;
   top: 62px;
@@ -1226,19 +1234,20 @@ input:focus + label{
 
 .map-info span {
   display: block;
-  width:177px;
+  width: 177px;
   font-size: 14px;
   line-height: 20px;
   color: #323232;
   margin-bottom: 1px;
 }
 
-.map-info address {
+.map-info p {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
   font-style: normal;
   margin-bottom: 18px;
+  margin-top: 2px;
 }
 
 .map-info .feedback {
@@ -1250,7 +1259,7 @@ input:focus + label{
   background-color: #e94f38;
   margin-top: 25px;
   padding-left: 26px;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 10px;
   font-size: 18px;
   line-height: 24px;
@@ -1266,7 +1275,7 @@ input:focus + label{
   margin-top: 20px;
 }
 
-.footer-catalog{
+.footer-catalog {
   border-top: 1px solid rgba(255,255,255,0.3);
   margin-top: 60px;
   padding-top: 17px;
@@ -1325,26 +1334,26 @@ input:focus + label{
   background-image: url("../img/vkontakte.svg");
 }
 
-.vk:hover{
+.vk:hover {
   background-image: url("../img/vk-hover.svg");
 }
 
-.tw:hover{
+.tw:hover {
   background-image: url("../img/twitter-hover.svg");
 }
 
-.inst:hover{
+.inst:hover {
   background-image: url("../img/insta-hover.svg");
 }
 
-.fb:hover{
+.fb:hover {
   background-image: url("../img/fb-hover.svg");
 }
 
 .tw:active,
 .inst:active,
 .fb:active,
-.vk:active{
+.vk:active {
   opacity: 0.8;
   background: -moz-linear-gradient(bottom, #e9e9e9 0%, #c7c7c7 100%;);
   background: -webkit-linear-gradient(bottom, #e9e9e9 0%, #c7c7c7 100%;);
@@ -1357,8 +1366,8 @@ input:focus + label{
   float: left;
   vertical-align: top;
   margin-top: 11px;
-  margin-left:216px;
-  margin-right: 227px;
+  margin-left: 216px;
+  margin-right: 223px;
   margin-bottom: 35px;
 }
 
@@ -1371,7 +1380,7 @@ input:focus + label{
 
 .mat-left {
   float: left;
-  margin-right:27px;
+  margin-right: 27px;
   padding-left: 20px;
   background-image: url("../img/love.svg");
   background-repeat: no-repeat;
@@ -1390,11 +1399,11 @@ input:focus + label{
 .logo-academy {
   float: right;
   width: 190px;
-  color:#fff;
+  color: #fff;
 }
 
 .logo-academy img {
-  margin-bottom: -14px;
+  margin-bottom: -12px;
 }
 
 .logo-academy p{
@@ -1430,8 +1439,8 @@ p a {
   padding: 0;
 }
 
-.breadcrums li{
-  position:relative;
+.breadcrums li {
+  position: relative;
   display: inline-block;
   margin-right: 17px;
   font-size: 14px;
@@ -1474,8 +1483,8 @@ p a {
   padding-top: 1px;
   font-size: 35px;
   line-height: 41px;
-  font-weight:bold;
-  color:#fff;
+  font-weight: bold;
+  color: #fff;
 }
                     /*Стилизуем сортировку*/
 .sort-line {
@@ -1492,6 +1501,7 @@ p a {
   line-height: 16px;
   font-weight: 500;
   padding-left: 15px;
+  margin-bottom: 4px;
 }
 .sorting {
   width: 198px;
@@ -1511,74 +1521,73 @@ p a {
   overflow: hidden;
 }
 
-.select-top:hover{
+.select-top:hover {
   background-color: #fff;
   background-image: url("../img/select-arrow-hover.svg");
 }
 
-.select-top select:hover{
+.select-top select:hover {
 
   color: #000;
 }
 
 .select-top select {
   margin-left: 10px;
-  width:211px;
-  height:36px;
+  width: 211px;
+  height: 36px;
   border-style: none;
-  background:transparent;
-  color:#fff;
+  background: transparent;
+  color: #fff;
   font-size: 16px;
   line-height: 18px;
   outline: none;
   cursor: pointer;
 }
                     /*Стилизуем фильт цены*/
-.filer-price{
-  padding-top: 5px;
-  width:220px;
+.filer-price {
+  margin-top: -7px;
+  width: 220px;
   color: #fff;
 }
 
-.price-controls label{
+.price-controls label {
   display: inline-block;
   font-size: 14px;
   line-height: 16px;
-  vertical-align: top;
+  height: 30px;
   cursor: pointer;
 }
-.price-controls{
-  position:relative;
+.price-controls {
+  position: relative;
   font-size: 0;
   margin-left: 15px;
-  margin-bottom: 2px;
-  padding-top: 2px;
+
 }
 
-.price-controls::after{
+.price-controls::after {
   content: "";
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 49%;
   width: 7px;
   height: 2px;
   background-color: #fff;
 }
 
-.price-controls .min-price{
+.price-controls .min-price {
   width: 98px;
   margin-right: 9px;
 }
 
-.price-controls .max-price{
+.price-controls .max-price {
   width: 60px;
 }
 
-.price-controls input{
+.price-controls input {
   width: 26px;
   margin: 0;
   background: none;
-  border:none;
+  border: none;
   font: inherit;
   color: inherit;
   margin-left: 3px;
@@ -1602,14 +1611,14 @@ p a {
   background-color: rgba(255,255,255,0.5);
 }
 
-.range-controls .bar{
+.range-controls .bar {
   height: 4px;
   width: 98px;
   background-color: #f8f7f4;
   margin-left: 29px;
 }
 
-.range-toggle{
+.range-toggle {
   position: absolute;
   top: 8px;
   width: 2px;
@@ -1620,11 +1629,11 @@ p a {
   cursor: pointer;
 }
 
-.range-toggle-min{
-  left:35px;
+.range-toggle-min {
+  left: 35px;
 }
 
-.range-toggle-max{
+.range-toggle-max {
   right: 67px;
 }
 
@@ -1645,8 +1654,9 @@ p a {
   background-color: rgba(255,255,255,0.2);
 }
 
-.fat-scale label,
+.fat-scale > label,
 .fillers-list label{
+  color: #fff;
   display: inline-block;
   cursor: pointer;
   font-size: 16px;
@@ -1654,14 +1664,15 @@ p a {
   margin-left: 25px;
   margin-right: 20px;
   position: relative;
+
 }
 
 .fat-scale label:last-child,
-.fillers-list label:last-child{
+.fillers-list label:last-child {
   margin-right: 0;
 }
 
-.fat-scale input[type="radio"]{
+.fat-scale input[type="radio"] {
   display: none;
 }
 
@@ -1682,7 +1693,7 @@ p a {
   border: 2px solid #ffffff;
 }
 
-input[type="radio"]:checked + label::after{
+input[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -1694,7 +1705,7 @@ input[type="radio"]:checked + label::after{
   border-radius: 50%;
 }
 
-.fat-scale input[type="radio"]:disabled + label:before{
+.fat-scale input[type="radio"]:disabled + label:before {
   top: 0;
   left: -30px;
   display: block;
@@ -1711,7 +1722,7 @@ input[type="radio"]:checked + label::after{
   margin-top:11px;
 }
 
-.fillers-list{
+.fillers-list {
   margin-top: 3px;
   border-radius: 50px;
   background-color: rgba(255,255,255,0.2);
@@ -1719,7 +1730,7 @@ input[type="radio"]:checked + label::after{
   height: 36px;
 }
 
-.fillers-list label{
+.fillers-list label {
   display: inline-block;
   margin-top: 7px;
   margin-right: 7px;
@@ -1736,15 +1747,15 @@ input[type="radio"]:checked + label::after{
   cursor: pointer;
 }
 
-.fillers-list label:last-child{
+.fillers-list label:last-child {
   padding-right: 0;
 }
 
-.fillers-list input[type="checkbox"]{
+.fillers-list input[type="checkbox"] {
   display: none;
 }
 
- .fillers-list label:before{
+ .fillers-list label:before {
   content: "";
   position: absolute;
   top: 0px;
@@ -1768,9 +1779,13 @@ input[type="radio"]:checked + label::after{
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg); /* Для Firefox */
+    -ms-transform: rotate(-45deg); /* Для IE */
+    -webkit-transform: rotate(-45deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-45deg); /* Для Opera */
 }
 
-.fillers-list label:hover:before{
+.fillers-list label:hover:before {
   border: 2px solid #ffffff;
 }
 
@@ -1782,7 +1797,7 @@ input[type="radio"]:checked + label::after{
   margin-top: 36px;
   width: 145px;
 }
-.apply input[type="submit"]{
+.apply input[type="submit"] {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -1796,16 +1811,16 @@ input[type="radio"]:checked + label::after{
   background-color: rgba(255,255,255,0.2);
 }
 
-.apply input[type="submit"]:hover{
+.apply input[type="submit"]:hover {
   background-color: #fbfcfb;
   color: #353535;
-  border:none;
+  border: none;
   padding: 10px 29px;
 }
 
-.apply input[type="submit"]:active{
+.apply input[type="submit"]:active {
   background-color: #eaeaea;
-  border:none;
+  border: none;
   padding: 10px 29px;
   box-shadow: inset 0px 2px 1px #696969;
 }
@@ -1843,7 +1858,7 @@ input[type="radio"]:checked + label::after{
 }
 */
 
-.pagination .active{
+.pagination .active {
   background-color: #fff;
   color: #000;
   margin-left: 5px;
@@ -1863,7 +1878,7 @@ input[type="radio"]:checked + label::after{
   font-weight: 500;
 }
 
-.pagination a:last-child{
+.pagination a:last-child {
   margin-right: -10px;
 }
 
@@ -1872,8 +1887,8 @@ input[type="radio"]:checked + label::after{
   color: #fff;
 }
 
-.pagination a:active{
-  color:#000;
+.pagination a:active {
+  color: #000;
   background-color: #fff;
 }
 
@@ -1896,50 +1911,53 @@ input[type="radio"]:checked + label::after{
 }
 
 .pagination .go-left:hover,
-.pagination .go-right:hover{
-  background-color:#849d8f;
+.pagination .go-right:hover {
+  background-color: #849d8f;
 }
 
 
                     /*Модальное окно*/
 
 
-.overlay{
+.overlay {
   position: fixed;
-  top:0;
-  left:0;
-  z-index:5;
+  top: 0;
+  left: 0;
+  z-index: 5;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.3);
-  display: inherit;;
+  display: inherit;
 }
 
-.modal-feedback{
-  width:477px;
+.modal-feedback {
+  width: 477px;
   position: absolute;
-  z-index: 150;
-  top:26.3%;
+  z-index: 2050;
+  top: 26.3%;
   left: 30.3%;
   display: none;
   }
 
-  .form-feedback{
-  width:453px;
-  position: absolute;
-  z-index: 150;
+  .form-feedback {
+  width: 453px;
+  position: fixed;
+  top: 340px;
+  left: 50%;
+  z-index: 2150;
   padding: 0;
+  margin-left: -237px;
   background-color: #f8f7f4;
   padding-left: 24px;
   border-radius: 10px;
   box-shadow: 0 3px 7px rgba(0,0,0,0.35);
 }
 
-.modal-feedback-show{
+.modal-feedback-show {
   display: block;
 }
 
-.close-modal{
+.close-modal {
   display: inline-block;
   float: right;
   width: 22px;
@@ -1960,7 +1978,7 @@ input[type="radio"]:checked + label::after{
 }
 
 
-.modal-feedback h2{
+.modal-feedback h2 {
   display: inline-block;
   font-size: 24px;
   line-height: 28px;
@@ -1971,12 +1989,12 @@ input[type="radio"]:checked + label::after{
 .modal-feedback input[type="text"],
 .modal-feedback input[type="email"] {
   font-family: "Roboto", "Arial", sans-sertif;
-  width: 235px;
+  width: 265px;
   height: 44px;
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  color: #999999;
+  color: #000;
   background-color: #fff;
   border: 1px solid rgba(178,178,178,0.52);
   padding: 15px 14px;
@@ -1986,13 +2004,13 @@ input[type="radio"]:checked + label::after{
   box-sizing: border-box;
 }
 
-textarea{
+textarea {
   display: inline-block;
   padding: 0;
   padding-left: 13px;
   padding-top: 13PX;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
   border: 1px solid rgba(178,178,178,0.52);
   color: #999999;
   width: 413px;
@@ -2004,13 +2022,13 @@ textarea{
   outline: none;
 }
 
-.modal-feedback::after{
+.modal-feedback::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.modal-feedback input[type="submit"]{
+.modal-feedback input[type="submit"] {
   float: right;
   margin-right: 24px;
   padding: 10px 24px 10px 23px;
@@ -2018,6 +2036,10 @@ textarea{
 }
 
                     /*Стилизуем поля формы*/
+.modal-name {
+  margin-top: -9px;
+}
+
 .modal-name,
 .modal-email {
   position: relative;
@@ -2037,7 +2059,7 @@ textarea{
 .modal-email > label {
   position: absolute;
   left: 15px;
-  top: 7px;
+  top: 10px;
   transition: 0.5s;
   color: #999999;
   font-size: 16px;
@@ -2045,21 +2067,21 @@ textarea{
 }
 
 .modal-name:hover input,
-.modal-email:hover input{
+.modal-email:hover input {
   border: 2px solid #c7c6c5;
 }
 
 .modal-name input:focus + label{
   top: -7px;
-  left:2px;
+  left: 2px;
   color: #8fbdec;
   font-size: 11px;
   line-height: 13px;
 }
 
-.modal-email input:focus + label{
+.modal-email input:focus + label {
   top: -15px;
-  left:2px;
+  left: 2px;
   color: #8fbdec;
   font-size: 11px;
   line-height: 13px;

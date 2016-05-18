@@ -34,38 +34,47 @@
   <!--Конец навигации-->
         <div class="search-popup">
           <div class="bb">
-            <form>
-              <input type="search" placeholder="Что ищем?">
+            <form action="#">
+            <div class="magic-search">
+              <input id="sh" type="text" required>
+              <label for="sh">Что ищем?</label>
+            </div>
             </form>
           </div>
         </div>
         <div class="login">
           <a href="#">Вход</a>
           <div class="bb2">
-            <form>
-              <input type="email" name="email" placeholder="Электронная почта">
-              <input type="password" name="password" placeholder="Пароль">
+            <form action="#">
+              <div class="user-email">
+                <input type="email" name="email" id="email-us" required>
+                <label for="email-us">Электронная почта</label>
+              </div>
+              <div class="user-pass">
+                <input type="password" name="password" id="pass-us" required>
+                <label for="pass-us">Пароль</label>
+              </div>
               <input type="submit" value="Войти">
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+              <a class="log" href="#">Забыли пароль?</a>
+              <a class="log" href="#">Новая регистрация</a>
             </form>
           </div>
         </div>
         <div class="bascet-full">
-          <a href="#">2 товара</a>
+          <a class="basket" href="#">2 товара</a>
           <div class="bascet-hover">
-            <form>
+            <form action="#">
               <table>
                 <caption><span>Итого:</span> 750 руб.</caption>
                 <tr>
-                  <td><button></button></td>
+                  <td><a class="close" href="/catalog/delete" >&times;</a></td>
                   <td><img src="/img/ice-cream-310.jpg" alt="с апельсиновым джемом" width="33" height="33"></td>
                   <td>Пломбир с апельсиновым джемом</td>
                   <td>1,5 кг х <span>200 руб.</span></td>
                   <td>300 руб.</td>
                 </tr>
                 <tr>
-                  <td><button></button></td>
+                  <td><a class="close" href="/catalog/delete" >&times;</a></td>
                   <td><img src="img/ice-cream-355-pink.jpg" alt="с присыпкой из белого шоколада" width="33" height="33"></td>
                   <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td>1,5 кг x <span>300 руб.</span></td>
@@ -75,7 +84,7 @@
               <input type="submit" value="Оформить заказ">
             </form>
           </div>
-          </div>
+        </div>
         <section class="info">
           <p>С 10 до 20, ежедневно</p>
           <a href="tel:88124502525">8 812 450-25-25</a>
@@ -86,15 +95,15 @@
       <div class="inner-page lm">
         <ul class="breadcrums">
           <li><a href=index.html>Главная</a></li>
-          <li> <a href="#">Каталог</a></li>
+          <li><a href="#">Каталог</a></li>
           <li class="current">Сливочное</li>
         </ul>
         <h1>Сливочное мороженое</h1>
       </div>
   <!--Начало фильтра мороженого-->
-      <form class="filter lm" name="filter" method="get">
+      <form action="#" class="filter lm" name="filter" method="get">
         <div class="sorting sort-line">
-          <span class="ice-filter">Сортировка:</span>
+          <label class="ice-filter">Сортировка:</label>
           <div class="select-top">
             <select name="popularity">
               <option value="">по популярности</option>
@@ -106,8 +115,8 @@
         </div>
         <div class="filer-price sort-line">
           <div class="price-controls">
-            <label class="min-price">Цена:<input type="text" value="100">руб.</label>
-            <label class="max-price"><input type="text" value="500">руб.</label>
+            <label for="price-min" class="min-price">Цена:<input type="text" value="100" id="price-min">руб.</label>
+            <label for="price-max" class="max-price"><input type="text" value="500" id="price-max">руб.</label>
           </div>
           <div class="range-controls">
             <div class="scale">
