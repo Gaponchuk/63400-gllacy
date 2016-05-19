@@ -11,7 +11,7 @@ body {
 body > input[type="radio"] {
   display: none;
 }
-                    /*Начало разметки основного содержания*/
+/*Начало разметки основного содержания*/
 .central-container {
   width: 1200px;
   margin: 0 auto;
@@ -23,10 +23,12 @@ body > input[type="radio"] {
   background-image: url(../img/ice-cream-green.png);
   background-repeat: no-repeat;
   background-position: 50% 4.4%;
+  -webkit-transition: background-image 0.4s ease,
+    background-color 0.4s ease;
   transition: background-image 0.4s ease,
-              background-color 0.4s ease;
+    background-color 0.4s ease;
 }
-                    /*Навигация начало*/
+/*Навигация начало*/
 .gs-nav {
   float: left;
   width: 560px;
@@ -73,12 +75,12 @@ body > input[type="radio"] {
   display: none;
 }
 
-.menu li:hover a {
+.menu-item:hover a {
   color: #000;
   text-decoration: none;
 }
 
-.menu li:hover {
+.menu-item:hover {
   background-color: #fff;
   color: #000;
   border-radius: 50px;
@@ -129,7 +131,6 @@ body > input[type="radio"] {
   margin: 0;
   padding: 0px;
   text-align: center;
-  /*color: #000;*/
   border-radius: 5px;
   background-color: #fff;
   overflow: hidden;
@@ -193,7 +194,7 @@ li:hover .ch {
   background-color: #ededed;
   color: #333333;
 }
-                    /*Поиск попап*/
+/*Поиск попап*/
 .search-popup {
   float: left;
   display: inline-block;
@@ -265,7 +266,7 @@ input[type="text"] {
   height: 100px;
   display: none;
 }
-                    /*стилизуем поле поиска*/
+/*стилизуем поле поиска*/
 .magic-search {
   position: relative;
   width: 100%;
@@ -277,14 +278,15 @@ input[type="text"] {
   left: 15px;
   font-size: 14px;
   color: #999999;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.magic-search:hover input {
- border: 2px solid #c7c6c5 ;
+.magic-search:hover .magic-search-input {
+  border: 2px solid #c7c6c5 ;
 }
 
-.magic-search input:focus + label {
+.magic-search-input:focus + label {
   top: -10px;
   left: 5px;
   color: #8fbdec;
@@ -292,16 +294,16 @@ input[type="text"] {
   line-height: 13px;
 }
 
-.magic-search input:focus {
+.magic-search-input:focus {
   outline: 2px solid #8fbdec;
 }
 
-.magic-search input:valid + label {
- color: #999;
+.magic-search-input:valid + label {
+  color: #999;
 }
 
-                    /*конец ПОИСКв*/
-                    /*Копка вход*/
+/*конец ПОИСКв*/
+/*Копка вход*/
 .login > a {
   display: inline-block;
   font-size: 14px;
@@ -342,8 +344,8 @@ input[type="text"] {
   box-shadow: 0 20px 20px rgba(0,0,0,0.4);
 }
 
-  .bb2 input[type="email"],
-  .bb2 input[type="password"] {
+.bb2 input[type="email"],
+.bb2 input[type="password"] {
   font-size: 14px;
   width: 239px;
   height: 44px;
@@ -403,7 +405,7 @@ form .log {
   color: #000;
 }
 
-                    /*Стилизуем поля ввода для формы ВХОД*/
+/*Стилизуем поля ввода для формы ВХОД*/
 .user-pass,
 .user-email {
   position: relative;
@@ -416,6 +418,7 @@ form .log {
   color: #999999;
   top: 31px;
   left: 31px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -424,19 +427,19 @@ form .log {
   border: 2px solid #c7c6c5;
 }
 
-.user-pass input:focus + label,
-.user-email input:focus + label {
+.user-pass-input:focus + label,
+.user-email-input:focus + label {
   top: 2px;
   left: 22px;
   color: #8fbdec;
   font-size: 11px;
   line-height: 13px;
 }
-.user-pass input:valid + label {
- color: #999;
+.user-pass-input:valid + label {
+  color: #999;
 }
-                    /*Конец оформления кнопки входа*/
-                    /*Стилизация корзины*/
+/*Конец оформления кнопки входа*/
+/*Стилизация корзины*/
 .bascet {
   height: 32px;
   float: left;
@@ -463,7 +466,7 @@ form .log {
   display: none;
 
 }
-                    /*Полная корзина*/
+/*Полная корзина*/
 .bascet-full {
   position: relative;
   float: left;
@@ -610,8 +613,8 @@ caption span {
 .bascet-full:hover .bascet-hover {
   display: block;
 }
-                    /*Конец стилизации корзины*/
-                    /*Время работы в шапке*/
+/*Конец стилизации корзины*/
+/*Время работы в шапке*/
 .info {
   float: right;
   display: inline-block;
@@ -636,7 +639,7 @@ caption span {
   text-decoration: none;
 }
 
-                    /*Начало слайдера*/
+/*Начало слайдера*/
 .slader {
   position: relative;
   padding-top: 230px;
@@ -668,7 +671,6 @@ caption span {
   text-decoration: none;
   text-shadow: 0px 2px 5px rgba(160,32,11,0.76);
   background: #ea573b;
-  background: -moz-linear-gradient(top, #f26843 0%, #e74b36 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74b36 100%);
   background: linear-gradient(to bottom, #f26843 0%, #e74b36 100%);
   box-shadow: 0px 2px 2px rgba(172,16,0,0.64);
@@ -676,16 +678,14 @@ caption span {
 }
 
 .slider-btn:hover {
-  background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0px 2px 2px rgba(172,16,0,1);
 }
 
 .slider-btn:active {
-  background: -moz-linear-gradient:(top, #d84833 0%, #e1613e 100%);
-  background: -webkit-linear-gradient:(top, #d84833 0%, #e1613e 100%);
-  background: linear-gradient:(to bottom, #d84833 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84833 0%, #e1613e 100%);
+  background: linear-gradient(to bottom, #d84833 0%, #e1613e 100%);
   box-shadow: inset 0px 2px 2px rgba(176,16,0,1);
 }
 
@@ -758,7 +758,7 @@ caption span {
 .bg:after {
   background-image: url("../img/ice-cream-brown.png");
 }
-                    /*Конец слайдера*/
+/*Конец слайдера*/
 header {
   margin-left: 27px;
   margin-right: 27px;
@@ -769,7 +769,7 @@ header::after {
   clear: both;
 }
 
-                    /*Стилизация акций*/
+/*Стилизация акций*/
 main {
   margin-left: 27px;
   margin-right: 27px;
@@ -799,7 +799,6 @@ main {
   margin-right: 20px;
   box-shadow: 0px 2px 2px rgba(172,16,0,0.54);
   background: #cb3926;
-  background: -moz-linear-gradient(top, #f26843 0%, #cb3926 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #cb3926 100%);
   background: linear-gradient(to bottom, #f26843 0%, #cb3926 100%);
 }
@@ -810,7 +809,6 @@ input[type="submit"],
 .fast-see {
   box-shadow: 0px 2px 2px rgba(172,16,0,0.54);
   background: #cb3926;
-  background: -moz-linear-gradient(top, #f26843 0%, #cb3926 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #cb3926 100%);
   background: linear-gradient(to bottom, #f26843 0%, #cb3926 100%);
 }
@@ -819,7 +817,6 @@ input[type="submit"],
 input[type="submit"]:hover,
 .feedback:hover,
 .fast-see:hover {
-  background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0px 1px 2px rgba(172,16,0,1);
@@ -829,7 +826,6 @@ input[type="submit"]:hover,
 input[type="submit"]:active,
 .feedback:active,
 .fast-see:active {
-  background: -moz-linear-gradient(top, #d74632 0%, #e1613e 100%;);
   background: -webkit-linear-gradient(top, #d74632 0%, #e1613e 100%;);
   background: linear-gradient(to bottom, #d74632 0%, #e1613e 100%;);
   box-shadow: inset 0px 1px 2px rgba(172,16,0,1);
@@ -868,7 +864,7 @@ input[type="submit"]:active,
   margin-left: 13px;
 }
 
-                    /*Стилизация блока с мороженым основная страница*/
+/*Стилизация блока с мороженым основная страница*/
 .ice-cream-bottom {
   margin-bottom: 43px;
 }
@@ -945,7 +941,7 @@ input[type="submit"]:active,
   font-size: 30px;
   line-height: 45px;
 }
-                    /*Hover для блока с мороженым(бвстрый просмотр)*/
+/*Hover для блока с мороженым(бвстрый просмотр)*/
 .ice-cream:hover .hover-ice {
   display: block;
 }
@@ -975,7 +971,7 @@ input[type="submit"]:active,
   font-weight: bold;
   border-radius: 50px;
 }
-                    /*Раздел "Преимущества"*/
+/*Раздел "Преимущества"*/
 .better {
   background-image: url("../img/bg-better.png");
   background-color: #e9dcbf;
@@ -1052,7 +1048,7 @@ input[type="submit"]:active,
   display: table;
   clear: both;
 }
-                    /*Раздел "Новое в нашем блоке*/
+/*Раздел "Новое в нашем блоке*/
 .new-blog {
   display: inline-block;
   background-image: url("../img/new-in-blog.jpg");
@@ -1157,7 +1153,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-                    /*СТИЛИЗУЕМ форму подписки*/
+/*СТИЛИЗУЕМ форму подписки*/
 .sub-news {
   display: inline-block;
   vertical-align: top;
@@ -1171,6 +1167,7 @@ input[type="submit"] {
   color: #999999;
   top: 10px;
   left: 29px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -1190,10 +1187,10 @@ input:focus + label {
   outline: 2px solid #8fbdec;
 }
 
- .sub-news input:valid + label {
- color: #999;
+.sub-news input:valid + label {
+  color: #999;
 }
-                    /*Раздел "Карта"*/
+/*Раздел "Карта"*/
 .map {
   background-image: url("../img/map.jpg");
   height: 429px;
@@ -1273,7 +1270,7 @@ input:focus + label {
   outline: none;
   cursor: pointer;
 }
-                    /*Футер*/
+/*Футер*/
 .gl-footer {
   margin: 0;
   padding-bottom: 10px;
@@ -1348,7 +1345,6 @@ input:focus + label {
 .fb:active,
 .vk:active {
   opacity: 0.8;
-  background: -moz-linear-gradient(bottom, #e9e9e9 0%, #c7c7c7 100%;);
   background: -webkit-linear-gradient(bottom, #e9e9e9 0%, #c7c7c7 100%;);
   background: linear-gradient(to top, #e9e9e9 0%, #c7c7c7 100%;);
   box-shadow: inset 0px 2px 1px rgba(136,136,136,1);
@@ -1406,7 +1402,7 @@ p a {
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-                    /*Стили для каталога Gllacy*/
+/*Стили для каталога Gllacy*/
 .lm {
   margin-left: 27px;
 }
@@ -1414,7 +1410,7 @@ p a {
 .rm {
   margin-right: 27px;
 }
-                    /*Стилизуем хлебную крошку*/
+/*Стилизуем хлебную крошку*/
 .inner-page {
   display: inline-block;
   margin-top: -25px;
@@ -1477,7 +1473,7 @@ p a {
   font-weight: bold;
   color: #fff;
 }
-                    /*Стилизуем сортировку*/
+/*Стилизуем сортировку*/
 .sort-line {
   display: inline-block;
   vertical-align: top;
@@ -1534,7 +1530,7 @@ p a {
   outline: none;
   cursor: pointer;
 }
-                    /*Стилизуем фильт цены*/
+/*Стилизуем фильт цены*/
 .filer-price {
   margin-top: -7px;
   width: 220px;
@@ -1630,7 +1626,7 @@ p a {
 }
 
 
-                    /*Стилизуем жирность*/
+/*Стилизуем жирность*/
 .fat-content {
   width: 415px;
   padding-top: 3px;
@@ -1664,7 +1660,7 @@ p a {
   margin-right: 0;
 }
 
-.fat-scale input[type="radio"] {
+.fat-scale-input {
   display: none;
 }
 
@@ -1685,7 +1681,7 @@ p a {
   border: 2px solid #ffffff;
 }
 
-input[type="radio"]:checked + label::after {
+.fat-scale-input:checked + label::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -1697,7 +1693,7 @@ input[type="radio"]:checked + label::after {
   border-radius: 50%;
 }
 
-.fat-scale input[type="radio"]:disabled + label:before {
+.fat-scale-input:disabled + label:before {
   top: 0;
   left: -30px;
   display: block;
@@ -1707,7 +1703,7 @@ input[type="radio"]:checked + label::after {
   border-radius: 50%;
   box-sizing: border-box;
 }
-                    /*Стилизуем наполнители на выбор*/
+/*Стилизуем наполнители на выбор*/
 .fillers {
   width: 702px;
   margin-right: 11px;
@@ -1743,11 +1739,11 @@ input[type="radio"]:checked + label::after {
   padding-right: 0;
 }
 
-.fillers-list input[type="checkbox"] {
+.fillers-list-input {
   display: none;
 }
 
- .fillers-list label:before {
+.fillers-list label:before {
   content: "";
   position: absolute;
   top: 0px;
@@ -1760,7 +1756,7 @@ input[type="radio"]:checked + label::after {
   box-sizing: border-box;
 }
 
-.fillers-list input[type="checkbox"]:checked + label::after {
+.fillers-list-input:checked + label::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -1769,11 +1765,8 @@ input[type="radio"]:checked + label::after {
   width: 10px;
   height: 5px;
   border-left: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  -moz-transform: rotate(-45deg); /* Для Firefox */
-  -ms-transform: rotate(-45deg); /* Для IE */
-  -webkit-transform: rotate(-45deg); /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(-45deg); /* Для Opera */
+  border-bottom: 2px solid #ffffff; /* Для Firefox */ /* Для IE */
+  -webkit-transform: rotate(-45deg); /* Для Safari, Chrome, iOS */ /* Для Opera */
   transform: rotate(-45deg);
 }
 
@@ -1781,10 +1774,10 @@ input[type="radio"]:checked + label::after {
   border: 2px solid #ffffff;
 }
 
-.fillers-list input[type="checkbox"]:disabled + label:before {
+.fillers-list-input:disabled + label:before {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-                    /*Кнопка отправки сортировки*/
+/*Кнопка отправки сортировки*/
 .apply {
   margin-top: 36px;
   width: 145px;
@@ -1824,31 +1817,13 @@ input[type="radio"]:checked + label::after {
   margin-bottom: 40px;
 }
 
-                    /*Стилизуем пагинацию*/
+/*Стилизуем пагинацию*/
 .pagination {
   padding-top: 3px;
   float: right;
   vertical-align: top;
   margin-right: 31px;
 }
-/*
-.pagination::after{
-  content: "";
-  background-image: url(../img/arrow-right.png);
-  width: 8px;
-  height: 14px;
-  display:inline-block;
-}
-
-.pagination::before{
-  content: "";
-  background-image: url(../img/arrow-right.png);
-  width: 8px;
-  height: 14px;
-  display:inline-block;
-  transform: rotate(180deg);
-}
-*/
 
 .pagination .active {
   background-color: #fff;
@@ -1908,7 +1883,7 @@ input[type="radio"]:checked + label::after {
 }
 
 
-                    /*Модальное окно*/
+/*Модальное окно*/
 
 
 .overlay {
@@ -1930,12 +1905,12 @@ input[type="radio"]:checked + label::after {
   left: 50%;
   display: none;
   margin-right: -233px;
-  }
+}
 
-  .form-feedback {
+.form-feedback {
   width: 453px;
   position: fixed;
-  top: 340px;
+  top: 100px;
   left: 50%;
   z-index: 2150;
   padding: 0;
@@ -2028,7 +2003,7 @@ textarea {
   margin-bottom: 27px;
 }
 
-                    /*Стилизуем поля формы*/
+/*Стилизуем поля формы*/
 .modal-name {
   margin-top: -9px;
 }
@@ -2043,6 +2018,7 @@ textarea {
   position: absolute;
   left: 14px;
   top: 17px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #999999;
   font-size: 16px;
@@ -2053,6 +2029,7 @@ textarea {
   position: absolute;
   left: 15px;
   top: 10px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #999999;
   font-size: 16px;
@@ -2064,7 +2041,7 @@ textarea {
   border: 2px solid #c7c6c5;
 }
 
-.modal-name input:focus + label{
+.modal-name-input:focus + label{
   top: -7px;
   left: 2px;
   color: #8fbdec;
@@ -2072,7 +2049,7 @@ textarea {
   line-height: 13px;
 }
 
-.modal-email input:focus + label {
+.modal-email-input:focus + label {
   top: -15px;
   left: 2px;
   color: #8fbdec;
@@ -2080,6 +2057,6 @@ textarea {
   line-height: 13px;
 }
 
-.modal-name input:valid + label {
- color: #999;
+.modal-name-input:valid + label {
+  color: #999;
 }

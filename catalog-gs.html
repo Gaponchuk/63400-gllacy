@@ -6,7 +6,7 @@
     <meta name="description" content="Магазин Gllacy Shop - место, где делают лучшее мороженное, используя настоящие сливки и молоко высочайшего качества">
     <meta name="keywords" content="мороженое собственного производства, настоящее мороженое, настоящее мороженое на развес">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,400,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -36,7 +36,7 @@
           <div class="bb">
             <form action="#">
             <div class="magic-search">
-              <input id="sh" type="text" required>
+              <input class="magic-search-input" id="sh" type="text" required>
               <label for="sh">Что ищем?</label>
             </div>
             </form>
@@ -47,11 +47,11 @@
           <div class="bb2">
             <form action="#">
               <div class="user-email">
-                <input type="email" name="email" id="email-us" required>
+                <input class="user-email-input" type="email" name="email" id="email-us" required>
                 <label for="email-us">Электронная почта</label>
               </div>
               <div class="user-pass">
-                <input type="password" name="password" id="pass-us" required>
+                <input class="user-pass-input" type="password" name="password" id="pass-us" required>
                 <label for="pass-us">Пароль</label>
               </div>
               <input type="submit" value="Войти">
@@ -129,28 +129,28 @@
         <div class="fat-content sort-line">
           <span class="ice-filter">Жирность</span>
           <div class="fat-scale">
-            <input type="radio" name="fat" id="zero" value="0">
+            <input class="fat-scale-input" type="radio" name="fat" id="zero" value="0">
             <label for="zero">0%</label>
-            <input type="radio" name="fat" id="before-10" value="10" checked>
+            <input class="fat-scale-input" type="radio" name="fat" id="before-10" value="10" checked>
             <label for="before-10">до 10%</label>
-            <input type="radio" name="fat" id="before-30" value="30">
+            <input class="fat-scale-input" type="radio" name="fat" id="before-30" value="30">
             <label for="before-30">до 30%</label>
-            <input type="radio" name="fat" id="after-30" value="30+">
+            <input class="fat-scale-input" type="radio" name="fat" id="after-30" value="30+">
             <label for="after-30">выше 30%</label>
           </div>
         </div>
         <div class="fillers sort-line">
           <span class="ice-filter">Наполнители</span>
           <div class="fillers-list">
-            <input type="checkbox" name="chocolate" id="ch" checked>
+            <input class="fillers-list-input" type="checkbox" name="chocolate" id="ch" checked>
             <label for="ch">шоколадные</label>
-            <input type="checkbox" name="sugar" id="su" checked>
+            <input class="fillers-list-input" type="checkbox" name="sugar" id="su" checked>
             <label for="su">сахарные присыпки</label>
-            <input type="checkbox" name="fruit" id="fr">
+            <input class="fillers-list-input" type="checkbox" name="fruit" id="fr">
             <label for="fr">фрукты</label>
-            <input type="checkbox" name="syrups" id="sy">
+            <input class="fillers-list-input" type="checkbox" name="syrups" id="sy">
             <label for="sy">сиропы</label>
-            <input type="checkbox" name="jam" id="ja">
+            <input class="fillers-list-input" type="checkbox" name="jam" id="ja">
             <label for="ja">джемы</label>
           </div>
         </div>

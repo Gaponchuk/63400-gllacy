@@ -6,7 +6,7 @@
     <meta name="description" content="Магазин Gllacy Shop - место, где делают лучшее мороженное, используя настоящие сливки и молоко высочайшего качества">
     <meta name="keywords" content="мороженое собственного производства, настоящее мороженое, настоящее мороженое на развес">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,400,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 
   </head>
@@ -24,7 +24,7 @@
           <nav class="gs-nav">
             <img title="Gllasy Shop" alt="Логотип GS" src="img/logo.svg" width="154" height="64">
             <ul class="menu">
-              <li><a href="#">Каталог</a>
+              <li class="menu-item"><a href="#">Каталог</a>
               <div class="ch">
                 <ul class="catalog-hover">
                   <li class="border"><a href="#">Новинки</a></li>
@@ -35,8 +35,8 @@
                 </ul>
               </div>
               </li>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О Компании</a></li>
+              <li class="menu-item"><a href="#">Доставка и оплата</a></li>
+              <li class="menu-item"><a href="#">О Компании</a></li>
             </ul>
           </nav>
 <!--Конец навигации-->
@@ -44,7 +44,7 @@
             <div class="bb">
               <form action="#">
                 <div class="magic-search">
-                  <input id="sh" type="text" required>
+                  <input class="magic-search-input" id="sh" type="text" required>
                   <label for="sh">Что ищем?</label>
                 </div>
               </form>
@@ -55,11 +55,11 @@
             <div class="bb2">
               <form action="#">
                 <div class="user-email">
-                  <input type="email" name="email" id="email-us" required>
+                  <input class="user-email-input" type="email" name="email" id="email-us" required>
                   <label for="email-us">Электронная почта</label>
                 </div>
                 <div class="user-pass">
-                  <input type="password" name="password" id="pass-us" required>
+                  <input class="user-pass-input" type="password" name="password" id="pass-us" required>
                   <label for="pass-us">Пароль</label>
                 </div>
                 <input type="submit" value="Войти">
@@ -219,11 +219,11 @@
           <h2>Мы обязательно вам ответим!</h2>
           <a class="close-modal" href="close-modal-feedback.html"></a>
           <div class="modal-name">
-            <input type="text" name="log" id="name-user" required>
+            <input class="modal-name-input" type="text" name="log" id="name-user" required>
             <label for="name-user">Как вас зовут?</label>
           </div>
           <div class="modal-email">
-            <input type="email" required id="email-user">
+            <input class="modal-email-input" type="email" required id="email-user">
             <label for="email-user">Ваша почта для ответа?</label>
           </div>
          <textarea placeholder="Напишите что нибудь"></textarea>
@@ -233,22 +233,9 @@
       <div class="overlay"></div>
     </div>
     <div class="yandex" id="yandex-map"></div>
+    
+    <script src="js/script.min.js"></script> 
+    
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=suolp7dn0XDRkWQMMGp-DSt1R-yf11X1&lang=ru_RU&sourceType=constructor&scroll=true&id=yandex-map"></script>
-    <script>
-
-    var link = document.querySelector(".feedback");
-    var popup = document.querySelector(".modal-feedback");
-    var close = document.querySelector(".close-modal")
-    link.addEventListener("click", function(event){
-      event.preventDefault();
-      popup.classList.add("modal-feedback-show");
-    });
-
-    close.addEventListener("click", function(event){
-      event.preventDefault();
-      popup.classList.remove("modal-feedback-show")
-    });
-
-    </script>
   </body>
 </html>
