@@ -615,6 +615,7 @@ caption span {
 .info {
   float: right;
   display: inline-block;
+  vertical-align: top;
   width: 170px;
   margin-top: 3px;
 }
@@ -787,7 +788,6 @@ main {
 
 .action a {
   text-decoration: none;
-  display: inline-block;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -875,6 +875,7 @@ input[type="submit"]:active,
 
 .ice-cream-gal {
   display: inline-block;
+  vertical-align: inherit;
   padding-left: 3px;
   font-size: 0;
   margin-bottom: 42px;
@@ -964,6 +965,7 @@ input[type="submit"]:active,
 .fast-see {
   margin-top: 325px;
   display: inline-block;
+  vertical-align: top;
   width: 200px;
   height: 36px;
   padding-top: 9px;
@@ -1158,6 +1160,7 @@ input[type="submit"] {
                     /*СТИЛИЗУЕМ форму подписки*/
 .sub-news {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   margin-right: 0px;
 }
@@ -1301,6 +1304,7 @@ input:focus + label {
 }
 .icon {
   display: inline-block;
+  vertical-align: top;
   width: 32px;
   height: 32px;
   margin-right: 8px;
@@ -1418,9 +1422,11 @@ p a {
 }
 
 .breadcrums {
+  vertical-align: inherit;
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 .breadcrums li {
@@ -1463,6 +1469,7 @@ p a {
 }
 .inner-page h1 {
   display: inline-block;
+  vertical-align: inherit;
   margin: 0;
   padding-top: 1px;
   font-size: 35px;
@@ -1536,6 +1543,7 @@ p a {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: inherit;
   font-size: 14px;
   line-height: 16px;
   height: 30px;
@@ -1916,11 +1924,12 @@ input[type="radio"]:checked + label::after {
 
 .modal-feedback {
   width: 477px;
-  position: absolute;
+  position: fixed;
   z-index: 2050;
   top: 26.3%;
-  left: 30.3%;
+  left: 50%;
   display: none;
+  margin-right: -233px;
   }
 
   .form-feedback {
@@ -1930,7 +1939,7 @@ input[type="radio"]:checked + label::after {
   left: 50%;
   z-index: 2150;
   padding: 0;
-  margin-left: -237px;
+  margin-left: -232px;
   background-color: #f8f7f4;
   padding-left: 24px;
   border-radius: 10px;
